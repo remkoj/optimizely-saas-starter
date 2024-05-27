@@ -1,0 +1,4 @@
+fragment HomePageHeroBlockData on HomePageHeroBlock {
+    HomeHeroBlockHeading,
+    HomeHeroBlockSubHeading
+}

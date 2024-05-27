@@ -1,0 +1,9 @@
+fragment StartPageData on StartPage {
+    HomePageHeroContentArea {
+        ...BlockData
+    }
+    HomePageMainContentArea
+    {
+        ...BlockData
+    }
+}
