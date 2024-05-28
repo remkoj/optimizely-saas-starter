@@ -58,14 +58,24 @@ const config: CodegenConfig = {
                 // - ElementData => For all element types that are useable within Visual Builder
                 injections: [
                     {
-                        // Add from all pages, except colocated blocks
+                        // Add from all pages, within code
                         into: "PageData",
-                        pathRegex: "src\/components\/cms\/page\/"
+                        pathRegex: "src\/components\/cms\/page\/.*\.[tj]s(x){0,1}$"
                     },
                     {
-                        // Add from all blocks
+                        // Add from all blocks, within code
                         into: "BlockData",
-                        pathRegex: "src\/components\/cms\/component\/"
+                        pathRegex: "src\/components\/cms\/component\/.*\.[tj]s(x){0,1}$"
+                    },
+                    {
+                        // Add from all pages, as .page.graphql file
+                        into: "PageData",
+                        pathRegex: "src\/components\/cms\/.*\.page\.graphql$"
+                    },
+                    {
+                        // Add from all blocks, as .component.graphql file
+                        into: "BlockData",
+                        pathRegex: "src\/components\/cms\/.*\.component\.graphql$"
                     }
                 ],
             } as OptimizelyGraphPresetOptions

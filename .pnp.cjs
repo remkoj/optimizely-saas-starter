@@ -34,6 +34,8 @@ const RAW_RUNTIME_STATE =
           ["@graphql-codegen/typescript", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:4.0.7"],\
           ["@graphql-codegen/typescript-operations", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:4.2.1"],\
           ["@graphql-typed-document-node/core", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:3.2.0"],\
+          ["@remkoj/optimizely-cms-api", "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz"],\
+          ["@remkoj/optimizely-cms-cli", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz"],\
           ["@remkoj/optimizely-cms-nextjs", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:2.0.0-pre3"],\
           ["@remkoj/optimizely-cms-react", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:2.0.0-pre3"],\
           ["@remkoj/optimizely-graph-cli", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:2.0.0-pre3"],\
@@ -1283,7 +1285,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-tools/load", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.2"],\
           ["@graphql-tools/prisma-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.4"],\
           ["@graphql-tools/url-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.2"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@parcel/watcher", null],\
           ["@types/graphql", null],\
           ["@types/parcel__watcher", null],\
@@ -1339,7 +1341,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-codegen/typescript-operations", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:4.2.1"],\
           ["@graphql-codegen/visitor-plugin-common", "virtual:4d0be9f35e1962f4c1bf0b049c85f200bd6df36bdae2859a7f522e152f676fec205203c29625e4686b5f8aed71a0bec4c158b1297c720b126f0a76564c4af547#npm:5.2.0"],\
           ["@graphql-tools/documents", "virtual:4d0be9f35e1962f4c1bf0b049c85f200bd6df36bdae2859a7f522e152f676fec205203c29625e4686b5f8aed71a0bec4c158b1297c720b126f0a76564c4af547#npm:1.0.0"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@graphql-typed-document-node/core", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:3.2.0"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
@@ -1366,7 +1368,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-codegen/core", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:4.0.2"],\
           ["@graphql-codegen/plugin-helpers", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:5.0.4"],\
           ["@graphql-tools/schema", "virtual:4c2b91376c49e913847ecb9378040218c036eb3e71223d60670d4d225d2ae574330df236953b7409459b0b4c0df7b87a046f6b68cfe07b0866359603fc21ef8c#npm:10.0.4"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["tslib", "npm:2.6.2"]\
@@ -1416,7 +1418,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-codegen/gql-tag-operations", "virtual:4d0be9f35e1962f4c1bf0b049c85f200bd6df36bdae2859a7f522e152f676fec205203c29625e4686b5f8aed71a0bec4c158b1297c720b126f0a76564c4af547#npm:4.0.7"],\
           ["@graphql-codegen/plugin-helpers", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:5.0.4"],\
           ["@graphql-codegen/visitor-plugin-common", "virtual:4d0be9f35e1962f4c1bf0b049c85f200bd6df36bdae2859a7f522e152f676fec205203c29625e4686b5f8aed71a0bec4c158b1297c720b126f0a76564c4af547#npm:5.2.0"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["auto-bind", "npm:4.0.0"],\
           ["graphql", "npm:16.8.1"],\
@@ -1474,7 +1476,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-codegen-plugin-helpers-virtual-6735af1a71/3/AppData/Local/Yarn/Berry/cache/@graphql-codegen-plugin-helpers-npm-5.0.4-37c31c9c16-10c0.zip/node_modules/@graphql-codegen/plugin-helpers/",\
         "packageDependencies": [\
           ["@graphql-codegen/plugin-helpers", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:5.0.4"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["change-case-all", "npm:1.0.15"],\
           ["common-tags", "npm:1.8.2"],\
@@ -1522,7 +1524,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-codegen/schema-ast", "virtual:6b323ba7618fd100f35dd4347828bc1d1215f38a2ed2e58339b7beb32bcf6d01b8bd4a99e9db2ce360e0428bd2f0ef5c0c238f38e5cec8190e628bf3f4504ac0#npm:4.0.2"],\
           ["@graphql-codegen/plugin-helpers", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:5.0.4"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["tslib", "npm:2.6.2"]\
@@ -1671,7 +1673,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-codegen/plugin-helpers", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:5.0.4"],\
           ["@graphql-tools/optimize", "virtual:959a7246b23217e19a9bfbd7b8cc1419a070e8a83b5ac1339e06474f7f03b59bf598dbfb39787bc765f5ffd81a898065cce1f6da32a9a0b31b39c3eff90d1e0c#npm:2.0.0"],\
           ["@graphql-tools/relay-operation-optimizer", "virtual:959a7246b23217e19a9bfbd7b8cc1419a070e8a83b5ac1339e06474f7f03b59bf598dbfb39787bc765f5ffd81a898065cce1f6da32a9a0b31b39c3eff90d1e0c#npm:7.0.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["auto-bind", "npm:4.0.0"],\
           ["change-case-all", "npm:1.0.15"],\
@@ -1724,7 +1726,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/apollo-engine-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.1"],\
           ["@ardatan/sync-fetch", "npm:0.0.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["@whatwg-node/fetch", "npm:0.9.17"],\
           ["graphql", "npm:16.8.1"],\
@@ -1749,7 +1751,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-batch-execute-virtual-cb37b7cab0/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-batch-execute-npm-9.0.4-3fb3972a45-10c0.zip/node_modules/@graphql-tools/batch-execute/",\
         "packageDependencies": [\
           ["@graphql-tools/batch-execute", "virtual:3772345481fda9767799c79e4a8a97a30bab7cce754cc348973318f0d0084cba813ba601af6874ee87163ae09cd616dbbc46967185df7084efc385568887ccf1#npm:9.0.4"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["dataloader", "npm:2.2.2"],\
           ["graphql", "npm:16.8.1"],\
@@ -1776,7 +1778,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/code-file-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.1.2"],\
           ["@graphql-tools/graphql-tag-pluck", "virtual:aba8ed23473709dbe557bc566f1deced68894b68d3119e31f3a3d4c1c799e62056faf3e07b9176f4cad280a1323d4424892c124cd512179926747645134a899d#npm:8.3.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["globby", "npm:11.1.0"],\
           ["graphql", "npm:16.8.1"],\
@@ -1805,7 +1807,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-tools/batch-execute", "virtual:3772345481fda9767799c79e4a8a97a30bab7cce754cc348973318f0d0084cba813ba601af6874ee87163ae09cd616dbbc46967185df7084efc385568887ccf1#npm:9.0.4"],\
           ["@graphql-tools/executor", "virtual:3772345481fda9767799c79e4a8a97a30bab7cce754cc348973318f0d0084cba813ba601af6874ee87163ae09cd616dbbc46967185df7084efc385568887ccf1#npm:1.2.6"],\
           ["@graphql-tools/schema", "virtual:4c2b91376c49e913847ecb9378040218c036eb3e71223d60670d4d225d2ae574330df236953b7409459b0b4c0df7b87a046f6b68cfe07b0866359603fc21ef8c#npm:10.0.4"],\
-          ["@graphql-tools/utils", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:10.2.1"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["dataloader", "npm:2.2.2"],\
           ["graphql", "npm:16.8.1"],\
@@ -1854,7 +1856,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-executor-virtual-750c1652dd/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-executor-npm-1.2.6-ccc63eb7ee-10c0.zip/node_modules/@graphql-tools/executor/",\
         "packageDependencies": [\
           ["@graphql-tools/executor", "virtual:3772345481fda9767799c79e4a8a97a30bab7cce754cc348973318f0d0084cba813ba601af6874ee87163ae09cd616dbbc46967185df7084efc385568887ccf1#npm:1.2.6"],\
-          ["@graphql-tools/utils", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:10.2.1"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@graphql-typed-document-node/core", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:3.2.0"],\
           ["@repeaterjs/repeater", "npm:3.0.6"],\
           ["@types/graphql", null],\
@@ -1881,7 +1883,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-executor-graphql-ws-virtual-b7992e94ce/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-executor-graphql-ws-npm-1.1.2-d9128d4963-10c0.zip/node_modules/@graphql-tools/executor-graphql-ws/",\
         "packageDependencies": [\
           ["@graphql-tools/executor-graphql-ws", "virtual:06f1e78e914673129fef57e3416be729844f7524d26b78d9d9e5f465d5be55a2b739168f6e4db681e7e4fcd31dcd33531aa63122380a0de86a2e3dad5d722521#npm:1.1.2"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["@types/ws", "npm:8.5.10"],\
           ["graphql", "npm:16.8.1"],\
@@ -1909,7 +1911,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-executor-http-virtual-b2bd91f5d5/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-executor-http-npm-1.0.9-355a7891af-10c0.zip/node_modules/@graphql-tools/executor-http/",\
         "packageDependencies": [\
           ["@graphql-tools/executor-http", "virtual:e83c047878aa5024bf969711682b57b14adadbb6555ae922c045f681c46e2bebfb584c30932ad9c0d10b066ce9f5d358d6e9a65c7c79a53549c1d0dff5e0df3e#npm:1.0.9"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@repeaterjs/repeater", "npm:3.0.6"],\
           ["@types/graphql", null],\
           ["@whatwg-node/fetch", "npm:0.9.17"],\
@@ -1938,7 +1940,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-executor-legacy-ws-virtual-ea2018a651/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-executor-legacy-ws-npm-1.0.6-f80c33271d-10c0.zip/node_modules/@graphql-tools/executor-legacy-ws/",\
         "packageDependencies": [\
           ["@graphql-tools/executor-legacy-ws", "virtual:06f1e78e914673129fef57e3416be729844f7524d26b78d9d9e5f465d5be55a2b739168f6e4db681e7e4fcd31dcd33531aa63122380a0de86a2e3dad5d722521#npm:1.0.6"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["@types/ws", "npm:8.5.10"],\
           ["graphql", "npm:16.8.1"],\
@@ -1966,7 +1968,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/git-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.6"],\
           ["@graphql-tools/graphql-tag-pluck", "virtual:aba8ed23473709dbe557bc566f1deced68894b68d3119e31f3a3d4c1c799e62056faf3e07b9176f4cad280a1323d4424892c124cd512179926747645134a899d#npm:8.3.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["is-glob", "npm:4.0.3"],\
@@ -1996,7 +1998,7 @@ const RAW_RUNTIME_STATE =
           ["@ardatan/sync-fetch", "npm:0.0.1"],\
           ["@graphql-tools/executor-http", "virtual:e83c047878aa5024bf969711682b57b14adadbb6555ae922c045f681c46e2bebfb584c30932ad9c0d10b066ce9f5d358d6e9a65c7c79a53549c1d0dff5e0df3e#npm:1.0.9"],\
           ["@graphql-tools/graphql-tag-pluck", "virtual:aba8ed23473709dbe557bc566f1deced68894b68d3119e31f3a3d4c1c799e62056faf3e07b9176f4cad280a1323d4424892c124cd512179926747645134a899d#npm:8.3.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["@whatwg-node/fetch", "npm:0.9.17"],\
           ["graphql", "npm:16.8.1"],\
@@ -2023,7 +2025,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/graphql-file-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.1"],\
           ["@graphql-tools/import", "virtual:d72ea1bcfa2dd8f906ce0c0c7a9cdcf05615591278b544992d770d15c16e46cbe40ba0108a1aeb32dae9836210b95f6719936203d6de44fb71c9b6dd64b21fc3#npm:7.0.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["globby", "npm:11.1.0"],\
           ["graphql", "npm:16.8.1"],\
@@ -2054,7 +2056,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/plugin-syntax-import-assertions", "virtual:e3bba617cedf65995424442de305092fcb2b247a665df844682544d368ccb06c4f2e3949225e715927b74139c86916d707b43b05c6d1d76250c8d41c71394d1e#npm:7.24.6"],\
           ["@babel/traverse", "npm:7.24.6"],\
           ["@babel/types", "npm:7.24.6"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["tslib", "npm:2.6.2"]\
@@ -2078,7 +2080,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-import-virtual-d91fac4988/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-import-npm-7.0.1-9f60498c03-10c0.zip/node_modules/@graphql-tools/import/",\
         "packageDependencies": [\
           ["@graphql-tools/import", "virtual:d72ea1bcfa2dd8f906ce0c0c7a9cdcf05615591278b544992d770d15c16e46cbe40ba0108a1aeb32dae9836210b95f6719936203d6de44fb71c9b6dd64b21fc3#npm:7.0.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["resolve-from", "npm:5.0.0"],\
@@ -2103,7 +2105,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-json-file-loader-virtual-d1ec1de519/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-json-file-loader-npm-8.0.1-9c0768d795-10c0.zip/node_modules/@graphql-tools/json-file-loader/",\
         "packageDependencies": [\
           ["@graphql-tools/json-file-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.1"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["globby", "npm:11.1.0"],\
           ["graphql", "npm:16.8.1"],\
@@ -2130,7 +2132,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/load", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.2"],\
           ["@graphql-tools/schema", "virtual:4c2b91376c49e913847ecb9378040218c036eb3e71223d60670d4d225d2ae574330df236953b7409459b0b4c0df7b87a046f6b68cfe07b0866359603fc21ef8c#npm:10.0.4"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["p-limit", "npm:3.1.0"],\
@@ -2155,7 +2157,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-merge-virtual-c5415de9e7/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-merge-npm-9.0.4-169df8c300-10c0.zip/node_modules/@graphql-tools/merge/",\
         "packageDependencies": [\
           ["@graphql-tools/merge", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:9.0.4"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["tslib", "npm:2.6.2"]\
@@ -2224,7 +2226,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/prisma-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.4"],\
           ["@graphql-tools/url-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.2"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["@types/js-yaml", "npm:4.0.9"],\
           ["@whatwg-node/fetch", "npm:0.9.17"],\
@@ -2285,7 +2287,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/relay-operation-optimizer", "virtual:959a7246b23217e19a9bfbd7b8cc1419a070e8a83b5ac1339e06474f7f03b59bf598dbfb39787bc765f5ffd81a898065cce1f6da32a9a0b31b39c3eff90d1e0c#npm:7.0.1"],\
           ["@ardatan/relay-compiler", "virtual:7ba5b427f9da605d32859f3537bd1c359fbf957ab82f2446411850888aca59a91c4f3030400a727fad9d0988791303a44e1f5df5a13459f30c56a35c1183dd20#npm:12.0.0"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["tslib", "npm:2.6.2"]\
@@ -2310,7 +2312,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@graphql-tools/schema", "virtual:4c2b91376c49e913847ecb9378040218c036eb3e71223d60670d4d225d2ae574330df236953b7409459b0b4c0df7b87a046f6b68cfe07b0866359603fc21ef8c#npm:10.0.4"],\
           ["@graphql-tools/merge", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:9.0.4"],\
-          ["@graphql-tools/utils", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:10.2.1"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["tslib", "npm:2.6.2"],\
@@ -2340,7 +2342,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-tools/executor-graphql-ws", "virtual:06f1e78e914673129fef57e3416be729844f7524d26b78d9d9e5f465d5be55a2b739168f6e4db681e7e4fcd31dcd33531aa63122380a0de86a2e3dad5d722521#npm:1.1.2"],\
           ["@graphql-tools/executor-http", "virtual:e83c047878aa5024bf969711682b57b14adadbb6555ae922c045f681c46e2bebfb584c30932ad9c0d10b066ce9f5d358d6e9a65c7c79a53549c1d0dff5e0df3e#npm:1.0.9"],\
           ["@graphql-tools/executor-legacy-ws", "virtual:06f1e78e914673129fef57e3416be729844f7524d26b78d9d9e5f465d5be55a2b739168f6e4db681e7e4fcd31dcd33531aa63122380a0de86a2e3dad5d722521#npm:1.0.6"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@graphql-tools/wrap", "virtual:06f1e78e914673129fef57e3416be729844f7524d26b78d9d9e5f465d5be55a2b739168f6e4db681e7e4fcd31dcd33531aa63122380a0de86a2e3dad5d722521#npm:10.0.5"],\
           ["@types/graphql", null],\
           ["@types/ws", "npm:8.5.10"],\
@@ -2359,13 +2361,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@graphql-tools/utils", [\
-      ["npm:10.2.0", {\
-        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@graphql-tools-utils-npm-10.2.0-c86141d921-10c0.zip/node_modules/@graphql-tools/utils/",\
-        "packageDependencies": [\
-          ["@graphql-tools/utils", "npm:10.2.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["npm:10.2.1", {\
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@graphql-tools-utils-npm-10.2.1-6db35f1d78-10c0.zip/node_modules/@graphql-tools/utils/",\
         "packageDependencies": [\
@@ -2387,23 +2382,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:10.2.1", {\
-        "packageLocation": "./.yarn/__virtual__/@graphql-tools-utils-virtual-b4ba40ab5e/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-utils-npm-10.2.1-6db35f1d78-10c0.zip/node_modules/@graphql-tools/utils/",\
-        "packageDependencies": [\
-          ["@graphql-tools/utils", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:10.2.1"],\
-          ["@graphql-typed-document-node/core", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:3.2.0"],\
-          ["@types/graphql", null],\
-          ["cross-inspect", "npm:1.0.0"],\
-          ["dset", "npm:3.1.3"],\
-          ["graphql", "npm:16.8.1"],\
-          ["tslib", "npm:2.6.2"]\
-        ],\
-        "packagePeers": [\
-          "@types/graphql",\
-          "graphql"\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["virtual:8159511eb2a60b4583b93b248565a6e92964e81161dca75a86dd0fb6ff761239c99850aef06c82ad66e54f48399e75eab00b81fba1adb0ea3db4859226bf6235#npm:8.13.1", {\
         "packageLocation": "./.yarn/__virtual__/@graphql-tools-utils-virtual-74d9e912f3/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-utils-npm-8.13.1-88f30592b4-10c0.zip/node_modules/@graphql-tools/utils/",\
         "packageDependencies": [\
@@ -2418,10 +2396,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0", {\
-        "packageLocation": "./.yarn/__virtual__/@graphql-tools-utils-virtual-dd873dc644/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-utils-npm-10.2.0-c86141d921-10c0.zip/node_modules/@graphql-tools/utils/",\
+      ["virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1", {\
+        "packageLocation": "./.yarn/__virtual__/@graphql-tools-utils-virtual-3a654521e2/3/AppData/Local/Yarn/Berry/cache/@graphql-tools-utils-npm-10.2.1-6db35f1d78-10c0.zip/node_modules/@graphql-tools/utils/",\
         "packageDependencies": [\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@graphql-typed-document-node/core", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:3.2.0"],\
           ["@types/graphql", null],\
           ["cross-inspect", "npm:1.0.0"],\
@@ -2465,7 +2443,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-tools/wrap", "virtual:06f1e78e914673129fef57e3416be729844f7524d26b78d9d9e5f465d5be55a2b739168f6e4db681e7e4fcd31dcd33531aa63122380a0de86a2e3dad5d722521#npm:10.0.5"],\
           ["@graphql-tools/delegate", "virtual:06f1e78e914673129fef57e3416be729844f7524d26b78d9d9e5f465d5be55a2b739168f6e4db681e7e4fcd31dcd33531aa63122380a0de86a2e3dad5d722521#npm:10.0.11"],\
           ["@graphql-tools/schema", "virtual:4c2b91376c49e913847ecb9378040218c036eb3e71223d60670d4d225d2ae574330df236953b7409459b0b4c0df7b87a046f6b68cfe07b0866359603fc21ef8c#npm:10.0.4"],\
-          ["@graphql-tools/utils", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:10.2.1"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/graphql", null],\
           ["graphql", "npm:16.8.1"],\
           ["tslib", "npm:2.6.2"],\
@@ -2809,6 +2787,44 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@pkgjs-parseargs-npm-0.11.0-cd2a3fe948-10c0.zip/node_modules/@pkgjs/parseargs/",\
         "packageDependencies": [\
           ["@pkgjs/parseargs", "npm:0.11.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@remkoj/optimizely-cms-api", [\
+      ["https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@remkoj-optimizely-cms-api-https-f40be24bb7-10c0.zip/node_modules/@remkoj/optimizely-cms-api/",\
+        "packageDependencies": [\
+          ["@remkoj/optimizely-cms-api", "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@remkoj/optimizely-cms-cli", [\
+      ["https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@remkoj-optimizely-cms-cli-https-cecbaccf99-10c0.zip/node_modules/@remkoj/optimizely-cms-cli/",\
+        "packageDependencies": [\
+          ["@remkoj/optimizely-cms-cli", "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@remkoj-optimizely-cms-cli-virtual-5afa89e117/3/AppData/Local/Yarn/Berry/cache/@remkoj-optimizely-cms-cli-https-cecbaccf99-10c0.zip/node_modules/@remkoj/optimizely-cms-cli/",\
+        "packageDependencies": [\
+          ["@remkoj/optimizely-cms-cli", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz"],\
+          ["@remkoj/optimizely-cms-api", "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz"],\
+          ["@types/remkoj__optimizely-cms-api", null],\
+          ["chalk", "npm:5.3.0"],\
+          ["cli-table3", "npm:0.6.5"],\
+          ["dotenv", "npm:16.4.5"],\
+          ["dotenv-expand", "npm:11.0.6"],\
+          ["figures", "npm:6.1.0"],\
+          ["glob", "npm:10.4.1"],\
+          ["yargs", "npm:17.7.2"]\
+        ],\
+        "packagePeers": [\
+          "@remkoj/optimizely-cms-api",\
+          "@types/remkoj__optimizely-cms-api"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6156,7 +6172,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-tools/load", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.2"],\
           ["@graphql-tools/merge", "virtual:38609ac885dc190d442eeb95f6eda4f2c673087fa57184e4a34dc3191d0afe2782f2b257773cb5ec7d3f3ccabff996faf0b30874b7c2a640540bc02d22aa651a#npm:9.0.4"],\
           ["@graphql-tools/url-loader", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.0.2"],\
-          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.0"],\
+          ["@graphql-tools/utils", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:10.2.1"],\
           ["@types/cosmiconfig-toml-loader", null],\
           ["@types/graphql", null],\
           ["cosmiconfig", "virtual:874c66e7be84b4b205a744b7b27b3594ada9fdf78e5eeef7f7f43bcf9fc5ae8eeef5d0aa708795c41f1c51046545e775b1e1bb5f316da1ff08e55ea4518ce1b9#npm:8.3.6"],\
@@ -7971,6 +7987,8 @@ const RAW_RUNTIME_STATE =
           ["@graphql-codegen/typescript", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:4.0.7"],\
           ["@graphql-codegen/typescript-operations", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:4.2.1"],\
           ["@graphql-typed-document-node/core", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:3.2.0"],\
+          ["@remkoj/optimizely-cms-api", "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz"],\
+          ["@remkoj/optimizely-cms-cli", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz"],\
           ["@remkoj/optimizely-cms-nextjs", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:2.0.0-pre3"],\
           ["@remkoj/optimizely-cms-react", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:2.0.0-pre3"],\
           ["@remkoj/optimizely-graph-cli", "virtual:c20eebf95d309300c65d714ea004eba48bbaec087f54c37e915acd8b17298b714ef908afe7e515429d1d7a04ae644cb5a8a8fda3830dfbd90a8ab0d58375a163#npm:2.0.0-pre3"],\

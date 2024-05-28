@@ -35,6 +35,8 @@
     "@graphql-codegen/typescript": "^4.0.7",
     "@graphql-codegen/typescript-operations": "^4.2.1",
     "@graphql-typed-document-node/core": "^3.2.0",
+    "@remkoj/optimizely-cms-api": "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz",
+    "@remkoj/optimizely-cms-cli": "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz",
     "@remkoj/optimizely-graph-cli": "^2.0.0-pre3",
     "@remkoj/optimizely-graph-functions": "^2.0.0-pre3",
     "@types/node": "^20",

@@ -1404,21 +1404,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:^10.0.0, @graphql-tools/utils@npm:^10.0.13":
-  version: 10.2.0
-  resolution: "@graphql-tools/utils@npm:10.2.0"
-  dependencies:
-    "@graphql-typed-document-node/core": "npm:^3.1.1"
-    cross-inspect: "npm:1.0.0"
-    dset: "npm:^3.1.2"
-    tslib: "npm:^2.4.0"
-  peerDependencies:
-    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/98d452f68d98cbeb749f0c5e475447b5ca826f984651f2a47d5829d0dd8d0008e9f85109a5a451c399a15ac4a58b0ec59d457b89b321385c6e6932ec89d7dd61
-  languageName: node
-  linkType: hard
-
-"@graphql-tools/utils@npm:^10.1.1, @graphql-tools/utils@npm:^10.2.1":
+"@graphql-tools/utils@npm:^10.0.0, @graphql-tools/utils@npm:^10.0.13, @graphql-tools/utils@npm:^10.1.1, @graphql-tools/utils@npm:^10.2.1":
   version: 10.2.1
   resolution: "@graphql-tools/utils@npm:10.2.1"
   dependencies:
@@ -1732,6 +1718,32 @@ __metadata:
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
   checksum: 10c0/5bd7576bb1b38a47a7fc7b51ac9f38748e772beebc56200450c4a817d712232b8f1d3ef70532c80840243c657d491cf6a6be1e3a214cff907645819fdc34aadd
+  languageName: node
+  linkType: hard
+
+"@remkoj/optimizely-cms-api@https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz":
+  version: 2.0.0-pre4
+  resolution: "@remkoj/optimizely-cms-api@https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz"
+  checksum: 10c0/115f5b59f8c0db664062732c0f5329895ddca8a45e1568a2e54187fe97d335bce85315abc642e68a6078dfbf01b1da9e0e4804894dde18a6b001bdf805ea681f
+  languageName: node
+  linkType: hard
+
+"@remkoj/optimizely-cms-cli@https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz":
+  version: 2.0.0-pre4
+  resolution: "@remkoj/optimizely-cms-cli@https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz"
+  dependencies:
+    chalk: "npm:^5.3.0"
+    cli-table3: "npm:^0.6.5"
+    dotenv: "npm:^16.4.5"
+    dotenv-expand: "npm:^11.0.6"
+    figures: "npm:^6.1.0"
+    glob: "npm:^10.4.1"
+    yargs: "npm:^17.7.2"
+  peerDependencies:
+    "@remkoj/optimizely-cms-api": 2.0.0-pre4
+  bin:
+    opti-cms: ./dist/index.js
+  checksum: 10c0/04431e6c9934a8045d607aff502b66d45f6c5cedee2eef010035533adda0fe30e32cd1809139a032559911d8b825ca64c441e058db80bb839cfe5f86bff46471
   languageName: node
   linkType: hard
 
@@ -4344,7 +4356,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.2.2, glob@npm:^10.3.10":
+"glob@npm:^10.2.2, glob@npm:^10.3.10, glob@npm:^10.4.1":
   version: 10.4.1
   resolution: "glob@npm:10.4.1"
   dependencies:
@@ -6049,6 +6061,8 @@ __metadata:
     "@graphql-codegen/typescript": "npm:^4.0.7"
     "@graphql-codegen/typescript-operations": "npm:^4.2.1"
     "@graphql-typed-document-node/core": "npm:^3.2.0"
+    "@remkoj/optimizely-cms-api": "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-api-dev.tgz"
+    "@remkoj/optimizely-cms-cli": "https://github.com/remkoj/optimizely-dxp-clients/raw/v2/artefacts/%40remkoj-optimizely-cms-cli-dev.tgz"
     "@remkoj/optimizely-cms-nextjs": "npm:^2.0.0-pre3"
     "@remkoj/optimizely-cms-react": "npm:^2.0.0-pre3"
     "@remkoj/optimizely-graph-cli": "npm:^2.0.0-pre3"
