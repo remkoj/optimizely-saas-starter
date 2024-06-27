@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && opti-graph webhook:create",
-    "build:full": "graphql-codegen && next build && opti-graph webhook:creat",
+    "build:full": "graphql-codegen && next build && opti-graph webhook:create",
     "start": "next start",
     "lint": "next lint",
     "compile": "graphql-codegen",
