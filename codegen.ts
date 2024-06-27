@@ -58,24 +58,44 @@ const config: CodegenConfig = {
                 // - ElementData => For all element types that are useable within Visual Builder
                 injections: [
                     {
-                        // Add from all pages, within code
+                        // Add from all Pages, within code
                         into: "PageData",
                         pathRegex: "src\/components\/cms\/page\/.*\.[tj]s(x){0,1}$"
                     },
                     {
-                        // Add from all blocks, within code
+                        // Add from all Experiences, within code
+                        into: "PageData",
+                        pathRegex: "src\/components\/cms\/experience\/.*\.[tj]s(x){0,1}$"
+                    },
+                    {
+                        // Add from all Blocks, within code
                         into: "BlockData",
                         pathRegex: "src\/components\/cms\/component\/.*\.[tj]s(x){0,1}$"
                     },
                     {
-                        // Add from all pages, as .page.graphql file
+                        // Add from all Elements, within code
+                        into: "ElementData",
+                        pathRegex: "src\/components\/cms\/element\/.*\.[tj]s(x){0,1}$"
+                    },
+                    {
+                        // Add from all Pages, as .page.graphql file
                         into: "PageData",
                         pathRegex: "src\/components\/cms\/.*\.page\.graphql$"
                     },
                     {
-                        // Add from all blocks, as .component.graphql file
+                        // Add from all Experiences, as .experience.graphql file
+                        into: "PageData",
+                        pathRegex: "src\/components\/cms\/.*\.experience\.graphql$"
+                    },
+                    {
+                        // Add from all Blocks, as .component.graphql file
                         into: "BlockData",
                         pathRegex: "src\/components\/cms\/.*\.component\.graphql$"
+                    },
+                    {
+                        // Add from all Elements, as .element.graphql file
+                        into: "ElementData",
+                        pathRegex: "src\/components\/cms\/.*\.element\.graphql$"
                     }
                 ],
             } as OptimizelyGraphPresetOptions

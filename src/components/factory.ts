@@ -1,4 +1,5 @@
 import 'server-only'
+import { DefaultComponents } from '@remkoj/optimizely-cms-react/components'
 import { getFactory as getBaseFactory } from "@remkoj/optimizely-cms-react/rsc";
 import { cache } from 'react'
 
@@ -13,6 +14,10 @@ import components from './cms';
  */
 export const getFactory = cache(() => {
     const factory = getBaseFactory()
+    // Register the default components (for rendering Rich Text)
+    factory.registerAll(DefaultComponents)
+
+    // Register the CMS Components
     factory.registerAll(components)
     return factory
 })

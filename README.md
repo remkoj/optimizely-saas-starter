@@ -2,6 +2,15 @@
 
 This is a [Next.js](https://nextjs.org/) project for [Optimizely CMS](https://www.optimizely.com/cms) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It contains the minimum required code to start building your own frontend on top of Optimizely CMS.
 
+## Preconditions
+This starter assumes that your environment matches these criteria:
+- You have the latest LTS version of Node.JS installed.
+- You've configured your system to use the latest stable version of yarn, if not, you can use these commands to enable the latest version of yarn.
+  - `corepack enable`
+  - `corepack install -g yarn@latest`
+
+If you're unsure about whether yarn has been installed, or you're using the latest stable version (e.g. yarn 4.3 or newer), run `yarn --version`. If installed it provides the running version of Yarn.
+
 ## Install the starter
 To install this example/starter, use the command: `yarn create next-app -e https://github.com/remkoj/optimizely-saas-starter my-great-project`. This will install this starter into the `my-great-project` folder within the current directory.
 
