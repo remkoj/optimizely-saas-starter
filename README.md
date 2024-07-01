@@ -46,15 +46,7 @@ You can find the default configuration, and more configuration options within th
 Now, with the connection defined, create the default components to reflect the structure.
 
 ```bash
-# Export all type definitions into the frontend codebase, for reference
-# and easy type updates 
-yarn opti-cms types:pull
-
-# Export all style definitions into the frontend codebase, for reference
-# and easy type updates 
-yarn opti-cms styles:pull
-
-# Create placeholders for all components registered within the CMS
+# Create the data structure for the components bound to Optimizely CMS
 yarn opti-cms nextjs:create
 ```
 
@@ -72,6 +64,11 @@ yarn dev
 ### 4. Customize the components
 By default all components are created in `src/components/cms`, you can now start modifying these components to build your site. The commands from step 2 are non-destructive, so you can re-run them as you define more content types within the CMS.
 
+The Optimizely CMS CLI contains a growing number of utilities to work directly with the content and models stored within the CMS from within your development environment. Run `yarn opti-cms --help` to get an overview and description of all currently available commands
+
 ## Debugging starter points
-- The compilation of GraphQL queries should complete with errors, if not, running `yarn compile --verbose` typically yields more detailed information on the cause of the error.
-- Content does not update after publishing in the CMS. In a deployed scenario, Optimizely Graph sends a webhook to notify the frontend of the change. Locally this does not work, so you need to publish manually by navigating to: `http://localhost:3000/api/content/publish?token=$OPTIMIZELY_PUBLISH_TOKEN` (replace `$OPTIMIZELY_PUBLISH_TOKEN` with the value from your .env / .env.local file). Run `yarn webhook:list` to see recipients of content updates.
+- _GraphQL Compilation errors:_ The compilation of GraphQL queries should complete with errors, if not, running `yarn compile --verbose` typically yields more detailed information on the cause of the error.
+- _No updates:_ Content does not update after publishing in the CMS. In a deployed scenario, Optimizely Graph sends a webhook to notify the frontend of the change. 
+  - Locally this does not work, so you need to publish manually by navigating to: `http://localhost:3000/api/content/publish?token=$OPTIMIZELY_PUBLISH_TOKEN` (replace `$OPTIMIZELY_PUBLISH_TOKEN` with the value from your .env / .env.local file).
+  - On a hosted environment, the domain used to register the webhook recipient is defined by the `SITE_DOMAIN` environment variable. This defaults to `$VERCEL_BRANCH_URL` to make the registration successful on Vercel.
+  - Run `yarn webhook:list` to see recipients of content updates and verify that your webhook as been registered correctly.
