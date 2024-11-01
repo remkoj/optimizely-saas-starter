@@ -1,6 +1,5 @@
 import 'server-only'
-import { DefaultComponents } from '@remkoj/optimizely-cms-react/components'
-import { getFactory as getBaseFactory } from "@remkoj/optimizely-cms-react/rsc";
+import { getFactory as getBaseFactory, RichTextComponentDictionary } from "@remkoj/optimizely-cms-react/rsc";
 import { cache } from 'react'
 
 // Import all server components that should be loaded dynamically when the 
@@ -15,7 +14,7 @@ import components from './cms';
 export const getFactory = cache(() => {
     const factory = getBaseFactory()
     // Register the default components (for rendering Rich Text)
-    factory.registerAll(DefaultComponents)
+    factory.registerAll(RichTextComponentDictionary)
 
     // Register the CMS Components
     factory.registerAll(components)
