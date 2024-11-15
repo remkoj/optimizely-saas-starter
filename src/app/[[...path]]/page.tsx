@@ -3,7 +3,7 @@ import { getContentByPath } from '@/gql/functions';
 import getFactory from '@/components/factory'
 
 const { CmsPage, generateMetadata, generateStaticParams } = OptimizelyCmsPage.createPage(getFactory(), {
-    getContentByPath: getContentByPath as OptimizelyCmsPage.GetContentByPathMethod,
+    getContentByPath: getContentByPath,
     client: () => {
         const client = getServerClient()
         client.updateFlags({

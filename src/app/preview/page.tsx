@@ -5,7 +5,7 @@ import { getContentById } from "@/gql/functions";
 
 const Page = OnPageEdit.createEditPageComponent(getFactory(), {
     // Casting is needed due to the locale being an enum in the generated types and a string in the generic query used by the loader
-    loader: getContentById as OnPageEdit.Types.GetContentByIdMethod,
+    loader: getContentById,
     clientFactory: (token?: string) => {
         const client = getAuthorizedServerClient(token)
         client.updateFlags({ queryCache: false, cache: false })
