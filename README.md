@@ -52,7 +52,6 @@ OPTIMIZELY_GRAPH_SECRET=
 
 Third, within your CMS, go to "Settings" > "API Clients" and create a new API Client. Define the credentials with the variables below.
 ```bash
-OPTIMIZELY_CMS_URL=
 OPTIMIZELY_CMS_CLIENT_ID=
 OPTIMIZELY_CMS_CLIENT_SECRET=
 ```
