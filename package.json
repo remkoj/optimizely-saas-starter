@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "Apache-2.0",
-  "packageManager": "yarn@4.5.1",
+  "packageManager": "yarn@4.5.3",
   "scripts": {
     "dev": "next dev",
     "build": "next build && opti-graph webhook:create",
@@ -16,9 +16,9 @@
     "webhook:list": "opti-graph webhook:list"
   },
   "dependencies": {
-    "@remkoj/optimizely-cms-nextjs": "^3.2.0",
-    "@remkoj/optimizely-cms-react": "^3.2.0",
-    "@remkoj/optimizely-graph-client": "^3.2.0",
+    "@remkoj/optimizely-cms-nextjs": "^3.2.1",
+    "@remkoj/optimizely-cms-react": "^3.2.1",
+    "@remkoj/optimizely-graph-client": "^3.2.1",
     "dotenv": "^16.4.5",
     "dotenv-expand": "^11.0.7",
     "entities": "^5.0.0",
@@ -31,17 +31,17 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.3",
-    "@graphql-codegen/client-preset": "^4.5.0",
+    "@graphql-codegen/client-preset": "^4.5.1",
     "@graphql-codegen/fragment-matcher": "^5.0.2",
     "@graphql-codegen/plugin-helpers": "^5.1.0",
-    "@graphql-codegen/typescript": "^4.1.1",
-    "@graphql-codegen/typescript-operations": "^4.3.1",
+    "@graphql-codegen/typescript": "^4.1.2",
+    "@graphql-codegen/typescript-operations": "^4.4.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@remkoj/optimizely-cms-api": "^3.2.0",
-    "@remkoj/optimizely-cms-cli": "^3.2.0",
-    "@remkoj/optimizely-graph-cli": "^3.2.0",
-    "@remkoj/optimizely-graph-functions": "^3.2.0",
-    "@types/node": "^22.9.0",
+    "@remkoj/optimizely-cms-api": "^3.2.1",
+    "@remkoj/optimizely-cms-cli": "^3.2.1",
+    "@remkoj/optimizely-graph-cli": "^3.2.1",
+    "@remkoj/optimizely-graph-functions": "^3.2.1",
+    "@types/node": "^22.10.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@yarnpkg/sdks": "^3.2.0",
@@ -51,9 +51,9 @@
     "figures": "^6.1.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   },
   "resolutions": {
-    "@graphql-codegen/visitor-plugin-common": "file:./packages/graphql-codegen-visitor-plugin-common-v5.4.0-patched.tgz"
+    "@graphql-codegen/visitor-plugin-common": "file:./packages/graphql-codegen-visitor-plugin-common-v5.6.0-patched.tgz"
   }
 }
