@@ -1,6 +1,9 @@
 import createPublishApi from '@remkoj/optimizely-cms-nextjs/publish'
 
-const publishApi = createPublishApi({ paths: [ '/', '/[[...path]]', '/sitemap.xml' ]})
+const publishApi = createPublishApi({ 
+    optimizePublish: true,
+    additionalPaths: ['/sitemap.xml']
+})
 
 // Configure the Next.JS route handling for the pages
 export const dynamic = 'force-dynamic'      // Make sure all API-Requests are executed
