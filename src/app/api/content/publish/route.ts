@@ -1,8 +1,8 @@
 import createPublishApi from '@remkoj/optimizely-cms-nextjs/publish'
 
 const publishApi = createPublishApi({ 
-    optimizePublish: true,
-    additionalPaths: ['/sitemap.xml']
+    optimizePublish: true, //Only publish the actual content item
+    additionalPaths: ['/sitemap.xml','/robots.txt'] // Always ensure that the sitemap.xml & robots.txt are up-to-date
 })
 
 // Configure the Next.JS route handling for the pages

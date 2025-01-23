@@ -1,17 +1,16 @@
 import { CmsPage as OptimizelyCmsPage, getServerClient } from "@remkoj/optimizely-cms-nextjs";
-import { getContentByPath } from '@/gql/functions';
-import getFactory from '@/components/factory'
+import { getContentByPath } from "@/gql/functions";
+import getFactory from "@/components/factory";
 
-const { CmsPage, generateMetadata, generateStaticParams } = OptimizelyCmsPage.createPage(getFactory(), {
-    getContentByPath: getContentByPath,
-    client: () => {
-        const client = getServerClient()
-        client.updateFlags({
-            queryCache: false // We're depending on @recursive & cursors, which don't work with the queryCache
-        })
-        return client
+// Deconstruct the created page in the constants Next.js needs
+const { CmsPage, generateMetadata, generateStaticParams } =
+  
+  OptimizelyCmsPage.createPage( // Create the page handler
+    getFactory(), { // Using the component factory
+      getContentByPath: getContentByPath, // The compile 'getContentByPath' function that has all the fragments merged
+      client: getServerClient, // And the fully configured GraphQL Client
     }
-})
+  );
 
 // Configure the Next.JS route handling for the pages
 export const dynamic = "force-static"; // Make sure we cache pages
@@ -20,8 +19,5 @@ export const revalidate = false; // Keep the cache untill manually revalidated u
 export const fetchCache = "default-cache"; // Cache fetch results by default
 
 // Export CMS Page
-export {
-    generateMetadata,
-    generateStaticParams
-}
-export default CmsPage
+export { generateMetadata, generateStaticParams };
+export default CmsPage;
