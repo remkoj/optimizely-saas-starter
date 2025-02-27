@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "Apache-2.0",
-  "packageManager": "yarn@4.5.3",
+  "packageManager": "yarn@4.6.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build && opti-graph webhook:create",
