@@ -9,6 +9,7 @@ This is a [Next.js](https://nextjs.org/) project for [Optimizely CMS](https://ww
   - [2. Reflect the CMS structure in the frontend](#2-reflect-the-cms-structure-in-the-frontend)
   - [3. Test/build the frontend](#3-testbuild-the-frontend)
   - [4. Customize the components](#4-customize-the-components)
+  - [5. Maintain the project](#5-maintain-the-project)
 - [Debugging starter points](#debugging-starter-points)
 - [Usage with Optimizely CMS 12](#usage-with-optimizely-cms-12)
   - [Adjusting the configuration](#adjusting-the-configuration)
@@ -82,6 +83,11 @@ By default all components are created in `src/components/cms`, you can now start
 
 The Optimizely CMS CLI contains a growing number of utilities to work directly with the content and models stored within the CMS from within your development environment. Run `yarn opti-cms --help` to get an overview and description of all currently available commands
 
+### 5. Maintain the project
+The release-notes for the Optimizely SaaS CMS packages that power this template are available as [GitHub Release Notes](https://github.com/remkoj/optimizely-dxp-clients).
+
+To update the patch for GraphQL Codegen, use the following command: `yarn opti-graph patches:apply`
+
 ## Debugging starter points
 - _GraphQL Compilation errors:_ The compilation of GraphQL queries should complete with errors, if not, running `yarn compile --verbose` typically yields more detailed information on the cause of the error.
 - _No updates:_ Content does not update after publishing in the CMS. In a deployed scenario, Optimizely Graph sends a webhook to notify the frontend of the change. 
@@ -91,18 +97,8 @@ The Optimizely CMS CLI contains a growing number of utilities to work directly w
 
 ## Usage with Optimizely CMS 12
 
-> [!WARNING] Warning: Usage beyond designed purpose
-> These SDKs and starter have been designed to work closely with Optimizely 
-> SaaS CMS. By popular request, and due to the ability to create a CMS 12 build
-> that is similar enough to Optimizely SaaS CMS, the steps to use CMS 12 are 
-> included here.
->
-> You are however outside the intended use-case of the SDKs and starter and
-> will need to bring the knowledge and skill-set to bridge the gap.
-
-> [!WARNING] Warning: CMS 12 Build
-> These instrunctions are created based upon a build of CMS 12, as all builds
-> are unique, there is no guarantee that it will work with your build.
+> [!WARNING] 
+> **Usage beyond designed purpose:** These SDKs and starter have been designed to work closely with Optimizely SaaS CMS. By popular request, and due to the ability to create a CMS 12 build that is similar enough to Optimizely SaaS CMS, the steps to use CMS 12 are included here.<br/><br/>You are however outside the intended use-case of the SDKs and starter and will need to bring the knowledge and needed skill-set to bridge the gap.
 
 This starter can be made to work with Optimizely CMS 12, however it assumes the following about the build of Optimizely CMS 12:
 
@@ -112,6 +108,9 @@ This starter can be made to work with Optimizely CMS 12, however it assumes the 
  * No modifications to the Content Delivery API
  * A configured and working installation of Optimizely CMS API - Preview 1
 
+> [!WARNING] 
+> **CMS 12 Build dependency:** These instrunctions are created based upon a build of CMS 12, as all builds are unique, there is no guarantee that it will work with your build.
+>
 ### Adjusting the configuration
 On the frontend side, configure the Graph Endpoint and CMS endpoints as per the documentation above. Then, make the following additional configuration changes. When done, the CLI commands, like `yarn opti-cms nextjs:create` and `yarn compile` should work as expected.
 
