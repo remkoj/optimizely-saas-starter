@@ -1,16 +1,11 @@
-import { OnPageEdit } from "@remkoj/optimizely-cms-nextjs";
+import { createEditPageComponent as createEditPage } from "@remkoj/optimizely-cms-nextjs/preview";
 import getFactory from '@/components/factory'
-import { getAuthorizedServerClient } from '@remkoj/optimizely-cms-nextjs'
+import { createClient } from '@remkoj/optimizely-graph-client'
 import { getContentById } from "@/gql/functions";
 
-const Page = OnPageEdit.createEditPageComponent(getFactory(), {
-    // Casting is needed due to the locale being an enum in the generated types and a string in the generic query used by the loader
+const Page = createEditPage(getFactory(), {
     loader: getContentById,
-    clientFactory: (token?: string) => {
-        const client = getAuthorizedServerClient(token)
-        client.updateFlags({ queryCache: false, cache: false })
-        return client
-    }
+    clientFactory: (token?: string) => createClient(undefined, token, { cache: false, queryCache: false })
 })
 
 // Configure the Next.JS route handling for the pages

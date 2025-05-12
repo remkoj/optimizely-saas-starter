@@ -13,5 +13,5 @@ export const fetchCache = 'force-no-store'  // Don't cache
 export const runtime = 'nodejs'             // Run at the edge
 
 // Export API Handler
-export const GET = publishApi
-export const POST = publishApi
+export const GET = publishApi // Allow direct invocation in browser
+export const POST = publishApi // Used by Optimizely Graph

@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+/**
+ * Optimizely SDK Error, shown in debug mode by the default component factory
+ * implementation when the component is not found.
+ */
+.opti-error {
+    box-sizing: border-box;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: var(--container-4xl);
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--color-red-800);
+    color: var(--color-red-800);
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-xl);
+    background-color: var(--color-red-200);
+    font-size: var(--text-xl);
+}
+.opti-error::before {
+    content: "‼ ";
+}
