@@ -1,11 +1,11 @@
 import { createEditPageComponent as createEditPage } from "@remkoj/optimizely-cms-nextjs/preview";
-import getFactory from '@/components/factory'
+import factory from '@/components/factory'
 import { createClient } from '@remkoj/optimizely-graph-client'
 import { getContentById } from "@/gql/functions";
 
-const Page = createEditPage(getFactory(), {
+const Page = createEditPage(factory, {
     loader: getContentById,
-    clientFactory: (token?: string) => createClient(undefined, token, { cache: false, queryCache: false })
+    clientFactory: (token?: string) => createClient(undefined, token, { cache: false, queryCache: false, nextJsFetchDirectives: true })
 })
 
 // Configure the Next.JS route handling for the pages

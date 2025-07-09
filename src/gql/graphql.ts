@@ -744,6 +744,7 @@ export type CompositionComponentNode = ICompositionComponentNode & ICompositionN
   displaySettings?: Maybe<Array<Maybe<CompositionDisplaySetting>>>;
   displayTemplateKey?: Maybe<Scalars['String']['output']>;
   key?: Maybe<Scalars['String']['output']>;
+  layoutType?: Maybe<Scalars['String']['output']>;
   nodeType?: Maybe<Scalars['String']['output']>;
   type?: Maybe<Scalars['String']['output']>;
 };
@@ -810,16 +811,19 @@ export type CompositionNode = ICompositionNode & {
   displaySettings?: Maybe<Array<Maybe<CompositionDisplaySetting>>>;
   displayTemplateKey?: Maybe<Scalars['String']['output']>;
   key?: Maybe<Scalars['String']['output']>;
+  layoutType?: Maybe<Scalars['String']['output']>;
   nodeType?: Maybe<Scalars['String']['output']>;
   type?: Maybe<Scalars['String']['output']>;
 };
 
 export type CompositionStructureNode = ICompositionNode & ICompositionStructureNode & {
   __typename?: 'CompositionStructureNode';
+  component?: Maybe<_IComponent>;
   displayName?: Maybe<Scalars['String']['output']>;
   displaySettings?: Maybe<Array<Maybe<CompositionDisplaySetting>>>;
   displayTemplateKey?: Maybe<Scalars['String']['output']>;
   key?: Maybe<Scalars['String']['output']>;
+  layoutType?: Maybe<Scalars['String']['output']>;
   nodeType?: Maybe<Scalars['String']['output']>;
   nodes?: Maybe<Array<Maybe<ICompositionNode>>>;
   type?: Maybe<Scalars['String']['output']>;
@@ -831,6 +835,7 @@ export type CompositionStructureNodeAutocomplete = {
   displaySettings?: Maybe<CompositionDisplaySettingAutocomplete>;
   displayTemplateKey?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   key?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+  layoutType?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   nodeType?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   nodes?: Maybe<ICompositionNodeAutocomplete>;
   type?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
@@ -855,6 +860,12 @@ export type CompositionStructureNodeAutocompletekeyArgs = {
 };
 
 
+export type CompositionStructureNodeAutocompletelayoutTypeArgs = {
+  limit?: Scalars['Int']['input'];
+  value: Scalars['String']['input'];
+};
+
+
 export type CompositionStructureNodeAutocompletenodeTypeArgs = {
   limit?: Scalars['Int']['input'];
   value: Scalars['String']['input'];
@@ -868,10 +879,12 @@ export type CompositionStructureNodeAutocompletetypeArgs = {
 
 export type CompositionStructureNodeFacet = {
   __typename?: 'CompositionStructureNodeFacet';
+  component?: Maybe<_IComponentFacet>;
   displayName?: Maybe<Array<Maybe<StringFacet>>>;
   displaySettings?: Maybe<CompositionDisplaySettingFacet>;
   displayTemplateKey?: Maybe<Array<Maybe<StringFacet>>>;
   key?: Maybe<Array<Maybe<StringFacet>>>;
+  layoutType?: Maybe<Array<Maybe<StringFacet>>>;
   nodeType?: Maybe<Array<Maybe<StringFacet>>>;
   nodes?: Maybe<ICompositionNodeFacet>;
   type?: Maybe<Array<Maybe<StringFacet>>>;
@@ -902,6 +915,14 @@ export type CompositionStructureNodeFacetkeyArgs = {
 };
 
 
+export type CompositionStructureNodeFacetlayoutTypeArgs = {
+  filters?: InputMaybe<Array<Scalars['String']['input']>>;
+  limit?: Scalars['Int']['input'];
+  orderBy?: InputMaybe<OrderBy>;
+  orderType?: InputMaybe<OrderByFacetType>;
+};
+
+
 export type CompositionStructureNodeFacetnodeTypeArgs = {
   filters?: InputMaybe<Array<Scalars['String']['input']>>;
   limit?: Scalars['Int']['input'];
@@ -918,20 +939,24 @@ export type CompositionStructureNodeFacettypeArgs = {
 };
 
 export type CompositionStructureNodeOrderByInput = {
+  component?: InputMaybe<_IComponentOrderByInput>;
   displayName?: InputMaybe<OrderBy>;
   displaySettings?: InputMaybe<CompositionDisplaySettingOrderByInput>;
   displayTemplateKey?: InputMaybe<OrderBy>;
   key?: InputMaybe<OrderBy>;
+  layoutType?: InputMaybe<OrderBy>;
   nodeType?: InputMaybe<OrderBy>;
   nodes?: InputMaybe<ICompositionNodeOrderByInput>;
   type?: InputMaybe<OrderBy>;
 };
 
 export type CompositionStructureNodeWhereInput = {
+  component?: InputMaybe<_IComponentWhereInput>;
   displayName?: InputMaybe<StringFilterInput>;
   displaySettings?: InputMaybe<CompositionDisplaySettingWhereInput>;
   displayTemplateKey?: InputMaybe<StringFilterInput>;
   key?: InputMaybe<StringFilterInput>;
+  layoutType?: InputMaybe<StringFilterInput>;
   nodeType?: InputMaybe<StringFilterInput>;
   nodes?: InputMaybe<ICompositionNodeWhereInput>;
   type?: InputMaybe<StringFilterInput>;
@@ -951,6 +976,7 @@ export type ContentMetadata = IContentMetadata & {
   status?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -1650,6 +1676,7 @@ export type ICompositionComponentNode = {
   displaySettings?: Maybe<Array<Maybe<CompositionDisplaySetting>>>;
   displayTemplateKey?: Maybe<Scalars['String']['output']>;
   key?: Maybe<Scalars['String']['output']>;
+  layoutType?: Maybe<Scalars['String']['output']>;
   nodeType?: Maybe<Scalars['String']['output']>;
   type?: Maybe<Scalars['String']['output']>;
 };
@@ -1659,6 +1686,7 @@ export type ICompositionNode = {
   displaySettings?: Maybe<Array<Maybe<CompositionDisplaySetting>>>;
   displayTemplateKey?: Maybe<Scalars['String']['output']>;
   key?: Maybe<Scalars['String']['output']>;
+  layoutType?: Maybe<Scalars['String']['output']>;
   nodeType?: Maybe<Scalars['String']['output']>;
   type?: Maybe<Scalars['String']['output']>;
 };
@@ -1669,6 +1697,7 @@ export type ICompositionNodeAutocomplete = {
   displaySettings?: Maybe<CompositionDisplaySettingAutocomplete>;
   displayTemplateKey?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   key?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+  layoutType?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   nodeType?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   type?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
 };
@@ -1692,6 +1721,12 @@ export type ICompositionNodeAutocompletekeyArgs = {
 };
 
 
+export type ICompositionNodeAutocompletelayoutTypeArgs = {
+  limit?: Scalars['Int']['input'];
+  value: Scalars['String']['input'];
+};
+
+
 export type ICompositionNodeAutocompletenodeTypeArgs = {
   limit?: Scalars['Int']['input'];
   value: Scalars['String']['input'];
@@ -1709,6 +1744,7 @@ export type ICompositionNodeFacet = {
   displaySettings?: Maybe<CompositionDisplaySettingFacet>;
   displayTemplateKey?: Maybe<Array<Maybe<StringFacet>>>;
   key?: Maybe<Array<Maybe<StringFacet>>>;
+  layoutType?: Maybe<Array<Maybe<StringFacet>>>;
   nodeType?: Maybe<Array<Maybe<StringFacet>>>;
   type?: Maybe<Array<Maybe<StringFacet>>>;
 };
@@ -1738,6 +1774,14 @@ export type ICompositionNodeFacetkeyArgs = {
 };
 
 
+export type ICompositionNodeFacetlayoutTypeArgs = {
+  filters?: InputMaybe<Array<Scalars['String']['input']>>;
+  limit?: Scalars['Int']['input'];
+  orderBy?: InputMaybe<OrderBy>;
+  orderType?: InputMaybe<OrderByFacetType>;
+};
+
+
 export type ICompositionNodeFacetnodeTypeArgs = {
   filters?: InputMaybe<Array<Scalars['String']['input']>>;
   limit?: Scalars['Int']['input'];
@@ -1758,6 +1802,7 @@ export type ICompositionNodeOrderByInput = {
   displaySettings?: InputMaybe<CompositionDisplaySettingOrderByInput>;
   displayTemplateKey?: InputMaybe<OrderBy>;
   key?: InputMaybe<OrderBy>;
+  layoutType?: InputMaybe<OrderBy>;
   nodeType?: InputMaybe<OrderBy>;
   type?: InputMaybe<OrderBy>;
 };
@@ -1767,15 +1812,18 @@ export type ICompositionNodeWhereInput = {
   displaySettings?: InputMaybe<CompositionDisplaySettingWhereInput>;
   displayTemplateKey?: InputMaybe<StringFilterInput>;
   key?: InputMaybe<StringFilterInput>;
+  layoutType?: InputMaybe<StringFilterInput>;
   nodeType?: InputMaybe<StringFilterInput>;
   type?: InputMaybe<StringFilterInput>;
 };
 
 export type ICompositionStructureNode = {
+  component?: Maybe<_IComponent>;
   displayName?: Maybe<Scalars['String']['output']>;
   displaySettings?: Maybe<Array<Maybe<CompositionDisplaySetting>>>;
   displayTemplateKey?: Maybe<Scalars['String']['output']>;
   key?: Maybe<Scalars['String']['output']>;
+  layoutType?: Maybe<Scalars['String']['output']>;
   nodeType?: Maybe<Scalars['String']['output']>;
   nodes?: Maybe<Array<Maybe<ICompositionNode>>>;
   type?: Maybe<Scalars['String']['output']>;
@@ -1794,6 +1842,7 @@ export type IContentMetadata = {
   status?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -1811,6 +1860,7 @@ export type IContentMetadataAutocomplete = {
   status?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrlAutocomplete>;
+  variation?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   version?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
 };
 
@@ -1851,6 +1901,12 @@ export type IContentMetadataAutocompletetypesArgs = {
 };
 
 
+export type IContentMetadataAutocompletevariationArgs = {
+  limit?: Scalars['Int']['input'];
+  value: Scalars['String']['input'];
+};
+
+
 export type IContentMetadataAutocompleteversionArgs = {
   limit?: Scalars['Int']['input'];
   value: Scalars['String']['input'];
@@ -1870,6 +1926,7 @@ export type IContentMetadataFacet = {
   status?: Maybe<Array<Maybe<StringFacet>>>;
   types?: Maybe<Array<Maybe<StringFacet>>>;
   url?: Maybe<ContentUrlFacet>;
+  variation?: Maybe<Array<Maybe<StringFacet>>>;
   version?: Maybe<Array<Maybe<StringFacet>>>;
 };
 
@@ -1957,6 +2014,14 @@ export type IContentMetadataFacettypesArgs = {
 };
 
 
+export type IContentMetadataFacetvariationArgs = {
+  filters?: InputMaybe<Array<Scalars['String']['input']>>;
+  limit?: Scalars['Int']['input'];
+  orderBy?: InputMaybe<OrderBy>;
+  orderType?: InputMaybe<OrderByFacetType>;
+};
+
+
 export type IContentMetadataFacetversionArgs = {
   filters?: InputMaybe<Array<Scalars['String']['input']>>;
   limit?: Scalars['Int']['input'];
@@ -1977,6 +2042,7 @@ export type IContentMetadataOrderByInput = {
   status?: InputMaybe<OrderBy>;
   types?: InputMaybe<OrderBy>;
   url?: InputMaybe<ContentUrlOrderByInput>;
+  variation?: InputMaybe<OrderBy>;
   version?: InputMaybe<OrderBy>;
 };
 
@@ -1993,6 +2059,7 @@ export type IContentMetadataWhereInput = {
   status?: InputMaybe<StringFilterInput>;
   types?: InputMaybe<StringFilterInput>;
   url?: InputMaybe<ContentUrlWhereInput>;
+  variation?: InputMaybe<StringFilterInput>;
   version?: InputMaybe<StringFilterInput>;
 };
 
@@ -2038,6 +2105,7 @@ export type IInstanceMetadata = {
   status?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -2060,6 +2128,7 @@ export type IItemMetadata = {
   status?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -2092,6 +2161,7 @@ export type IMediaMetadata = {
   thumbnail?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -2425,6 +2495,7 @@ export type InstanceMetadata = IContentMetadata & IInstanceMetadata & {
   status?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -2473,6 +2544,7 @@ export type ItemMetadata = IContentMetadata & IItemMetadata & {
   status?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -2823,6 +2895,7 @@ export type MediaMetadata = IContentMetadata & IInstanceMetadata & IMediaMetadat
   thumbnail?: Maybe<Scalars['String']['output']>;
   types?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   url?: Maybe<ContentUrl>;
+  variation?: Maybe<Scalars['String']['output']>;
   version?: Maybe<Scalars['String']['output']>;
 };
 
@@ -3444,6 +3517,7 @@ export type QueryArticleListElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ArticleListElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ArticleListElementWhereInput>;
 };
 
@@ -3455,6 +3529,7 @@ export type QueryBlankExperienceArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlankExperienceOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlankExperienceWhereInput>;
 };
 
@@ -3466,6 +3541,7 @@ export type QueryBlankSectionArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlankSectionOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlankSectionWhereInput>;
 };
 
@@ -3477,6 +3553,7 @@ export type QueryBlogPostPageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlogPostPageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlogPostPageWhereInput>;
 };
 
@@ -3488,6 +3565,7 @@ export type QueryBlogSectionExperienceArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlogSectionExperienceOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlogSectionExperienceWhereInput>;
 };
 
@@ -3499,6 +3577,7 @@ export type QueryButtonBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ButtonBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ButtonBlockWhereInput>;
 };
 
@@ -3510,6 +3589,7 @@ export type QueryCTAElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<CTAElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<CTAElementWhereInput>;
 };
 
@@ -3521,6 +3601,7 @@ export type QueryCarouselBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<CarouselBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<CarouselBlockWhereInput>;
 };
 
@@ -3532,6 +3613,7 @@ export type QueryContentRecsElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ContentRecsElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ContentRecsElementWhereInput>;
 };
 
@@ -3543,6 +3625,7 @@ export type QueryContinueReadingComponentArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ContinueReadingComponentOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ContinueReadingComponentWhereInput>;
 };
 
@@ -3554,6 +3637,7 @@ export type QueryDataArgs = {
   locale?: InputMaybe<Array<InputMaybe<system_Locales>>>;
   orderBy?: InputMaybe<DataOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<DataWhereInput>;
 };
 
@@ -3565,6 +3649,7 @@ export type QueryGenericMediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<GenericMediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<GenericMediaWhereInput>;
 };
 
@@ -3576,6 +3661,7 @@ export type QueryHeadingElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<HeadingElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<HeadingElementWhereInput>;
 };
 
@@ -3587,6 +3673,7 @@ export type QueryHeroBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<HeroBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<HeroBlockWhereInput>;
 };
 
@@ -3598,6 +3685,7 @@ export type QueryImageElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ImageElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ImageElementWhereInput>;
 };
 
@@ -3609,6 +3697,7 @@ export type QueryImageMediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ImageMediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ImageMediaWhereInput>;
 };
 
@@ -3620,6 +3709,7 @@ export type QueryLandingPageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<LandingPageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<LandingPageWhereInput>;
 };
 
@@ -3631,6 +3721,7 @@ export type QueryLayoutSettingsBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<LayoutSettingsBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<LayoutSettingsBlockWhereInput>;
 };
 
@@ -3642,6 +3733,7 @@ export type QueryMegaMenuGroupBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<MegaMenuGroupBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<MegaMenuGroupBlockWhereInput>;
 };
 
@@ -3653,6 +3745,7 @@ export type QueryMenuNavigationBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<MenuNavigationBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<MenuNavigationBlockWhereInput>;
 };
 
@@ -3664,6 +3757,7 @@ export type QueryOdpEmbedBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<OdpEmbedBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<OdpEmbedBlockWhereInput>;
 };
 
@@ -3675,6 +3769,7 @@ export type QueryPageSeoSettingsArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<PageSeoSettingsOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<PageSeoSettingsWhereInput>;
 };
 
@@ -3686,6 +3781,7 @@ export type QueryParagraphElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ParagraphElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ParagraphElementWhereInput>;
 };
 
@@ -3697,6 +3793,7 @@ export type QueryQuoteBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<QuoteBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<QuoteBlockWhereInput>;
 };
 
@@ -3708,6 +3805,7 @@ export type QueryRichTextElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<RichTextElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<RichTextElementWhereInput>;
 };
 
@@ -3719,6 +3817,7 @@ export type QuerySysContentFolderArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<SysContentFolderOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<SysContentFolderWhereInput>;
 };
 
@@ -3730,6 +3829,7 @@ export type QueryTestimonialElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<TestimonialElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<TestimonialElementWhereInput>;
 };
 
@@ -3741,6 +3841,7 @@ export type QueryTextBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<TextBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<TextBlockWhereInput>;
 };
 
@@ -3752,6 +3853,7 @@ export type QueryVideoElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<VideoElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<VideoElementWhereInput>;
 };
 
@@ -3763,6 +3865,7 @@ export type QueryVideoMediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<VideoMediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<VideoMediaWhereInput>;
 };
 
@@ -3774,6 +3877,7 @@ export type Query_ComponentArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ComponentOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ComponentWhereInput>;
 };
 
@@ -3785,6 +3889,7 @@ export type Query_ContentArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ContentOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ContentWhereInput>;
 };
 
@@ -3796,6 +3901,7 @@ export type Query_ExperienceArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ExperienceOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ExperienceWhereInput>;
 };
 
@@ -3807,6 +3913,7 @@ export type Query_FolderArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_FolderOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_FolderWhereInput>;
 };
 
@@ -3818,6 +3925,7 @@ export type Query_ImageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ImageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ImageWhereInput>;
 };
 
@@ -3829,6 +3937,7 @@ export type Query_MediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_MediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_MediaWhereInput>;
 };
 
@@ -3840,6 +3949,7 @@ export type Query_PageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_PageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_PageWhereInput>;
 };
 
@@ -3851,6 +3961,7 @@ export type Query_SectionArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_SectionOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_SectionWhereInput>;
 };
 
@@ -3862,6 +3973,7 @@ export type Query_VideoArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_VideoOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_VideoWhereInput>;
 };
 
@@ -3873,6 +3985,7 @@ export type Querycmp_AssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_AssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_AssetWhereInput>;
 };
 
@@ -3884,6 +3997,7 @@ export type Querycmp_CheckboxFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_CheckboxFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_CheckboxFieldWhereInput>;
 };
 
@@ -3895,6 +4009,7 @@ export type Querycmp_CurrencyFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_CurrencyFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_CurrencyFieldWhereInput>;
 };
 
@@ -3906,6 +4021,7 @@ export type Querycmp_DateFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_DateFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_DateFieldWhereInput>;
 };
 
@@ -3917,6 +4033,7 @@ export type Querycmp_DropdownFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_DropdownFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_DropdownFieldWhereInput>;
 };
 
@@ -3928,6 +4045,7 @@ export type Querycmp_FieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_FieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_FieldWhereInput>;
 };
 
@@ -3939,6 +4057,7 @@ export type Querycmp_ImageFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_ImageFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_ImageFieldWhereInput>;
 };
 
@@ -3950,6 +4069,7 @@ export type Querycmp_LabelFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_LabelFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_LabelFieldWhereInput>;
 };
 
@@ -3961,6 +4081,7 @@ export type Querycmp_NumberFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_NumberFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_NumberFieldWhereInput>;
 };
 
@@ -3972,6 +4093,7 @@ export type Querycmp_PercentFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PercentFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PercentFieldWhereInput>;
 };
 
@@ -3983,6 +4105,7 @@ export type Querycmp_PublicImageAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PublicImageAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PublicImageAssetWhereInput>;
 };
 
@@ -3994,6 +4117,7 @@ export type Querycmp_PublicRawFileAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PublicRawFileAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PublicRawFileAssetWhereInput>;
 };
 
@@ -4005,6 +4129,7 @@ export type Querycmp_PublicVideoAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PublicVideoAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PublicVideoAssetWhereInput>;
 };
 
@@ -4016,6 +4141,7 @@ export type Querycmp_RadioFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_RadioFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_RadioFieldWhereInput>;
 };
 
@@ -4027,6 +4153,7 @@ export type Querycmp_RichTextFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_RichTextFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_RichTextFieldWhereInput>;
 };
 
@@ -4038,6 +4165,7 @@ export type Querycmp_StructuredContentAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_StructuredContentAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_StructuredContentAssetWhereInput>;
 };
 
@@ -4049,6 +4177,7 @@ export type Querycmp_TextAreaFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_TextAreaFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_TextAreaFieldWhereInput>;
 };
 
@@ -4060,6 +4189,7 @@ export type Querycmp_TextFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_TextFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_TextFieldWhereInput>;
 };
 
@@ -4071,6 +4201,7 @@ export type Querycmp_VideoFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_VideoFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_VideoFieldWhereInput>;
 };
 
@@ -4144,6 +4275,7 @@ export type QueryRefArticleListElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ArticleListElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ArticleListElementWhereInput>;
 };
 
@@ -4155,6 +4287,7 @@ export type QueryRefBlankExperienceArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlankExperienceOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlankExperienceWhereInput>;
 };
 
@@ -4166,6 +4299,7 @@ export type QueryRefBlankSectionArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlankSectionOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlankSectionWhereInput>;
 };
 
@@ -4177,6 +4311,7 @@ export type QueryRefBlogPostPageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlogPostPageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlogPostPageWhereInput>;
 };
 
@@ -4188,6 +4323,7 @@ export type QueryRefBlogSectionExperienceArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<BlogSectionExperienceOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<BlogSectionExperienceWhereInput>;
 };
 
@@ -4199,6 +4335,7 @@ export type QueryRefButtonBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ButtonBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ButtonBlockWhereInput>;
 };
 
@@ -4210,6 +4347,7 @@ export type QueryRefCTAElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<CTAElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<CTAElementWhereInput>;
 };
 
@@ -4221,6 +4359,7 @@ export type QueryRefCarouselBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<CarouselBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<CarouselBlockWhereInput>;
 };
 
@@ -4232,6 +4371,7 @@ export type QueryRefContentRecsElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ContentRecsElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ContentRecsElementWhereInput>;
 };
 
@@ -4243,6 +4383,7 @@ export type QueryRefContinueReadingComponentArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ContinueReadingComponentOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ContinueReadingComponentWhereInput>;
 };
 
@@ -4254,6 +4395,7 @@ export type QueryRefDataArgs = {
   locale?: InputMaybe<Array<InputMaybe<system_Locales>>>;
   orderBy?: InputMaybe<DataOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<DataWhereInput>;
 };
 
@@ -4265,6 +4407,7 @@ export type QueryRefGenericMediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<GenericMediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<GenericMediaWhereInput>;
 };
 
@@ -4276,6 +4419,7 @@ export type QueryRefHeadingElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<HeadingElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<HeadingElementWhereInput>;
 };
 
@@ -4287,6 +4431,7 @@ export type QueryRefHeroBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<HeroBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<HeroBlockWhereInput>;
 };
 
@@ -4298,6 +4443,7 @@ export type QueryRefImageElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ImageElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ImageElementWhereInput>;
 };
 
@@ -4309,6 +4455,7 @@ export type QueryRefImageMediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ImageMediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ImageMediaWhereInput>;
 };
 
@@ -4320,6 +4467,7 @@ export type QueryRefLandingPageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<LandingPageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<LandingPageWhereInput>;
 };
 
@@ -4331,6 +4479,7 @@ export type QueryRefLayoutSettingsBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<LayoutSettingsBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<LayoutSettingsBlockWhereInput>;
 };
 
@@ -4342,6 +4491,7 @@ export type QueryRefMegaMenuGroupBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<MegaMenuGroupBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<MegaMenuGroupBlockWhereInput>;
 };
 
@@ -4353,6 +4503,7 @@ export type QueryRefMenuNavigationBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<MenuNavigationBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<MenuNavigationBlockWhereInput>;
 };
 
@@ -4364,6 +4515,7 @@ export type QueryRefOdpEmbedBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<OdpEmbedBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<OdpEmbedBlockWhereInput>;
 };
 
@@ -4375,6 +4527,7 @@ export type QueryRefPageSeoSettingsArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<PageSeoSettingsOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<PageSeoSettingsWhereInput>;
 };
 
@@ -4386,6 +4539,7 @@ export type QueryRefParagraphElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<ParagraphElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<ParagraphElementWhereInput>;
 };
 
@@ -4397,6 +4551,7 @@ export type QueryRefQuoteBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<QuoteBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<QuoteBlockWhereInput>;
 };
 
@@ -4408,6 +4563,7 @@ export type QueryRefRichTextElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<RichTextElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<RichTextElementWhereInput>;
 };
 
@@ -4419,6 +4575,7 @@ export type QueryRefSysContentFolderArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<SysContentFolderOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<SysContentFolderWhereInput>;
 };
 
@@ -4430,6 +4587,7 @@ export type QueryRefTestimonialElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<TestimonialElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<TestimonialElementWhereInput>;
 };
 
@@ -4441,6 +4599,7 @@ export type QueryRefTextBlockArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<TextBlockOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<TextBlockWhereInput>;
 };
 
@@ -4452,6 +4611,7 @@ export type QueryRefVideoElementArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<VideoElementOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<VideoElementWhereInput>;
 };
 
@@ -4463,6 +4623,7 @@ export type QueryRefVideoMediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<VideoMediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<VideoMediaWhereInput>;
 };
 
@@ -4474,6 +4635,7 @@ export type QueryRef_ComponentArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ComponentOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ComponentWhereInput>;
 };
 
@@ -4485,6 +4647,7 @@ export type QueryRef_ContentArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ContentOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ContentWhereInput>;
 };
 
@@ -4496,6 +4659,7 @@ export type QueryRef_ExperienceArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ExperienceOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ExperienceWhereInput>;
 };
 
@@ -4507,6 +4671,7 @@ export type QueryRef_FolderArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_FolderOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_FolderWhereInput>;
 };
 
@@ -4518,6 +4683,7 @@ export type QueryRef_ImageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_ImageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_ImageWhereInput>;
 };
 
@@ -4529,6 +4695,7 @@ export type QueryRef_MediaArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_MediaOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_MediaWhereInput>;
 };
 
@@ -4540,6 +4707,7 @@ export type QueryRef_PageArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_PageOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_PageWhereInput>;
 };
 
@@ -4551,6 +4719,7 @@ export type QueryRef_SectionArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_SectionOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_SectionWhereInput>;
 };
 
@@ -4562,6 +4731,7 @@ export type QueryRef_VideoArgs = {
   locale?: InputMaybe<Array<InputMaybe<Locales>>>;
   orderBy?: InputMaybe<_VideoOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<_VideoWhereInput>;
 };
 
@@ -4573,6 +4743,7 @@ export type QueryRefcmp_AssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_AssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_AssetWhereInput>;
 };
 
@@ -4584,6 +4755,7 @@ export type QueryRefcmp_CheckboxFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_CheckboxFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_CheckboxFieldWhereInput>;
 };
 
@@ -4595,6 +4767,7 @@ export type QueryRefcmp_CurrencyFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_CurrencyFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_CurrencyFieldWhereInput>;
 };
 
@@ -4606,6 +4779,7 @@ export type QueryRefcmp_DateFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_DateFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_DateFieldWhereInput>;
 };
 
@@ -4617,6 +4791,7 @@ export type QueryRefcmp_DropdownFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_DropdownFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_DropdownFieldWhereInput>;
 };
 
@@ -4628,6 +4803,7 @@ export type QueryRefcmp_FieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_FieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_FieldWhereInput>;
 };
 
@@ -4639,6 +4815,7 @@ export type QueryRefcmp_ImageFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_ImageFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_ImageFieldWhereInput>;
 };
 
@@ -4650,6 +4827,7 @@ export type QueryRefcmp_LabelFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_LabelFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_LabelFieldWhereInput>;
 };
 
@@ -4661,6 +4839,7 @@ export type QueryRefcmp_NumberFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_NumberFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_NumberFieldWhereInput>;
 };
 
@@ -4672,6 +4851,7 @@ export type QueryRefcmp_PercentFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PercentFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PercentFieldWhereInput>;
 };
 
@@ -4683,6 +4863,7 @@ export type QueryRefcmp_PublicImageAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PublicImageAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PublicImageAssetWhereInput>;
 };
 
@@ -4694,6 +4875,7 @@ export type QueryRefcmp_PublicRawFileAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PublicRawFileAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PublicRawFileAssetWhereInput>;
 };
 
@@ -4705,6 +4887,7 @@ export type QueryRefcmp_PublicVideoAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_PublicVideoAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_PublicVideoAssetWhereInput>;
 };
 
@@ -4716,6 +4899,7 @@ export type QueryRefcmp_RadioFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_RadioFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_RadioFieldWhereInput>;
 };
 
@@ -4727,6 +4911,7 @@ export type QueryRefcmp_RichTextFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_RichTextFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_RichTextFieldWhereInput>;
 };
 
@@ -4738,6 +4923,7 @@ export type QueryRefcmp_StructuredContentAssetArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_StructuredContentAssetOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_StructuredContentAssetWhereInput>;
 };
 
@@ -4749,6 +4935,7 @@ export type QueryRefcmp_TextAreaFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_TextAreaFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_TextAreaFieldWhereInput>;
 };
 
@@ -4760,6 +4947,7 @@ export type QueryRefcmp_TextFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_TextFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_TextFieldWhereInput>;
 };
 
@@ -4771,6 +4959,7 @@ export type QueryRefcmp_VideoFieldArgs = {
   locale?: InputMaybe<Array<InputMaybe<cmp_Locales>>>;
   orderBy?: InputMaybe<cmp_VideoFieldOrderByInput>;
   skip?: Scalars['Int']['input'];
+  variation?: InputMaybe<VariationInput>;
   where?: InputMaybe<cmp_VideoFieldWhereInput>;
 };
 
@@ -5289,6 +5478,18 @@ export type TextBlockWhereInput = {
   _or?: InputMaybe<Array<InputMaybe<TextBlockWhereInput>>>;
 };
 
+export enum VariationIncludeMode {
+  ALL = 'ALL',
+  NONE = 'NONE',
+  SOME = 'SOME'
+}
+
+export type VariationInput = {
+  include?: InputMaybe<VariationIncludeMode>;
+  includeOriginal?: InputMaybe<Scalars['Boolean']['input']>;
+  value?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
 export type VideoElement = IData & _IComponent & _IContent & {
   __typename?: 'VideoElement';
   /** @deprecated Use `_link` field instead */
@@ -5721,6 +5922,29 @@ export type _IComponent_fulltextArgs = {
 
 export type _IComponent_linkArgs = {
   type?: InputMaybe<LinkTypes>;
+};
+
+export type _IComponentFacet = {
+  __typename?: '_IComponentFacet';
+  _metadata?: Maybe<IContentMetadataFacet>;
+};
+
+export type _IComponentOrderByInput = {
+  _metadata?: InputMaybe<IContentMetadataOrderByInput>;
+  _minimumScore?: InputMaybe<Scalars['Float']['input']>;
+  _modified?: InputMaybe<OrderBy>;
+  _ranking?: InputMaybe<Ranking>;
+  /** The value needs to be a positive value, but cannot exceed the maximum value of an integer. In case it is exceeded, the maximum of an integer is used. In case of a negative value, semantic search will be disabled. */
+  _semanticWeight?: InputMaybe<Scalars['Float']['input']>;
+};
+
+export type _IComponentWhereInput = {
+  _and?: InputMaybe<Array<InputMaybe<_IComponentWhereInput>>>;
+  _fulltext?: InputMaybe<SearchableStringFilterInput>;
+  _metadata?: InputMaybe<IContentMetadataWhereInput>;
+  _modified?: InputMaybe<DateFilterInput>;
+  _not?: InputMaybe<Array<InputMaybe<_IComponentWhereInput>>>;
+  _or?: InputMaybe<Array<InputMaybe<_IComponentWhereInput>>>;
 };
 
 export type _IContent = {
@@ -11812,129 +12036,131 @@ export type getContentByIdQueryVariables = Exact<{
   locale?: InputMaybe<Array<Locales> | Locales>;
   path?: InputMaybe<Scalars['String']['input']>;
   domain?: InputMaybe<Scalars['String']['input']>;
+  changeset?: InputMaybe<Scalars['String']['input']>;
 }>;
 
 
 export type getContentByIdQuery = { __typename?: 'Query', content?: { __typename?: '_ContentOutput', total?: number | null, items?: (
       { __typename?: 'ArticleListElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_ArticleListElement_Fragment': BlockData_ArticleListElement_Fragment;'PageData_ArticleListElement_Fragment': PageData_ArticleListElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_ArticleListElement_Fragment': IContentData_ArticleListElement_Fragment;'BlockData_ArticleListElement_Fragment': BlockData_ArticleListElement_Fragment;'PageData_ArticleListElement_Fragment': PageData_ArticleListElement_Fragment } }
     ) | (
       { __typename?: 'BlankExperience' }
-      & { ' $fragmentRefs'?: { 'PageData_BlankExperience_Fragment': PageData_BlankExperience_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_BlankExperience_Fragment': IContentData_BlankExperience_Fragment;'PageData_BlankExperience_Fragment': PageData_BlankExperience_Fragment } }
     ) | (
       { __typename?: 'BlankSection' }
-      & { ' $fragmentRefs'?: { 'BlockData_BlankSection_Fragment': BlockData_BlankSection_Fragment;'PageData_BlankSection_Fragment': PageData_BlankSection_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_BlankSection_Fragment': IContentData_BlankSection_Fragment;'BlockData_BlankSection_Fragment': BlockData_BlankSection_Fragment;'PageData_BlankSection_Fragment': PageData_BlankSection_Fragment } }
     ) | (
       { __typename?: 'BlogPostPage' }
-      & { ' $fragmentRefs'?: { 'PageData_BlogPostPage_Fragment': PageData_BlogPostPage_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_BlogPostPage_Fragment': IContentData_BlogPostPage_Fragment;'PageData_BlogPostPage_Fragment': PageData_BlogPostPage_Fragment } }
     ) | (
       { __typename?: 'BlogSectionExperience' }
-      & { ' $fragmentRefs'?: { 'PageData_BlogSectionExperience_Fragment': PageData_BlogSectionExperience_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_BlogSectionExperience_Fragment': IContentData_BlogSectionExperience_Fragment;'PageData_BlogSectionExperience_Fragment': PageData_BlogSectionExperience_Fragment } }
     ) | (
       { __typename?: 'ButtonBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_ButtonBlock_Fragment': BlockData_ButtonBlock_Fragment;'PageData_ButtonBlock_Fragment': PageData_ButtonBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_ButtonBlock_Fragment': IContentData_ButtonBlock_Fragment;'BlockData_ButtonBlock_Fragment': BlockData_ButtonBlock_Fragment;'PageData_ButtonBlock_Fragment': PageData_ButtonBlock_Fragment } }
     ) | (
       { __typename?: 'CTAElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_CTAElement_Fragment': BlockData_CTAElement_Fragment;'PageData_CTAElement_Fragment': PageData_CTAElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_CTAElement_Fragment': IContentData_CTAElement_Fragment;'BlockData_CTAElement_Fragment': BlockData_CTAElement_Fragment;'PageData_CTAElement_Fragment': PageData_CTAElement_Fragment } }
     ) | (
       { __typename?: 'CarouselBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_CarouselBlock_Fragment': BlockData_CarouselBlock_Fragment;'PageData_CarouselBlock_Fragment': PageData_CarouselBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_CarouselBlock_Fragment': IContentData_CarouselBlock_Fragment;'BlockData_CarouselBlock_Fragment': BlockData_CarouselBlock_Fragment;'PageData_CarouselBlock_Fragment': PageData_CarouselBlock_Fragment } }
     ) | (
       { __typename?: 'ContentRecsElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_ContentRecsElement_Fragment': BlockData_ContentRecsElement_Fragment;'PageData_ContentRecsElement_Fragment': PageData_ContentRecsElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_ContentRecsElement_Fragment': IContentData_ContentRecsElement_Fragment;'BlockData_ContentRecsElement_Fragment': BlockData_ContentRecsElement_Fragment;'PageData_ContentRecsElement_Fragment': PageData_ContentRecsElement_Fragment } }
     ) | (
       { __typename?: 'ContinueReadingComponent' }
-      & { ' $fragmentRefs'?: { 'BlockData_ContinueReadingComponent_Fragment': BlockData_ContinueReadingComponent_Fragment;'PageData_ContinueReadingComponent_Fragment': PageData_ContinueReadingComponent_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_ContinueReadingComponent_Fragment': IContentData_ContinueReadingComponent_Fragment;'BlockData_ContinueReadingComponent_Fragment': BlockData_ContinueReadingComponent_Fragment;'PageData_ContinueReadingComponent_Fragment': PageData_ContinueReadingComponent_Fragment } }
     ) | (
       { __typename?: 'GenericMedia' }
-      & { ' $fragmentRefs'?: { 'PageData_GenericMedia_Fragment': PageData_GenericMedia_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_GenericMedia_Fragment': IContentData_GenericMedia_Fragment;'PageData_GenericMedia_Fragment': PageData_GenericMedia_Fragment } }
     ) | (
       { __typename?: 'HeadingElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_HeadingElement_Fragment': BlockData_HeadingElement_Fragment;'PageData_HeadingElement_Fragment': PageData_HeadingElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_HeadingElement_Fragment': IContentData_HeadingElement_Fragment;'BlockData_HeadingElement_Fragment': BlockData_HeadingElement_Fragment;'PageData_HeadingElement_Fragment': PageData_HeadingElement_Fragment } }
     ) | (
       { __typename?: 'HeroBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_HeroBlock_Fragment': BlockData_HeroBlock_Fragment;'PageData_HeroBlock_Fragment': PageData_HeroBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_HeroBlock_Fragment': IContentData_HeroBlock_Fragment;'BlockData_HeroBlock_Fragment': BlockData_HeroBlock_Fragment;'PageData_HeroBlock_Fragment': PageData_HeroBlock_Fragment } }
     ) | (
       { __typename?: 'ImageElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_ImageElement_Fragment': BlockData_ImageElement_Fragment;'PageData_ImageElement_Fragment': PageData_ImageElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_ImageElement_Fragment': IContentData_ImageElement_Fragment;'BlockData_ImageElement_Fragment': BlockData_ImageElement_Fragment;'PageData_ImageElement_Fragment': PageData_ImageElement_Fragment } }
     ) | (
       { __typename?: 'ImageMedia' }
-      & { ' $fragmentRefs'?: { 'PageData_ImageMedia_Fragment': PageData_ImageMedia_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_ImageMedia_Fragment': IContentData_ImageMedia_Fragment;'PageData_ImageMedia_Fragment': PageData_ImageMedia_Fragment } }
     ) | (
       { __typename?: 'LandingPage' }
-      & { ' $fragmentRefs'?: { 'PageData_LandingPage_Fragment': PageData_LandingPage_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_LandingPage_Fragment': IContentData_LandingPage_Fragment;'PageData_LandingPage_Fragment': PageData_LandingPage_Fragment } }
     ) | (
       { __typename?: 'LayoutSettingsBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_LayoutSettingsBlock_Fragment': BlockData_LayoutSettingsBlock_Fragment;'PageData_LayoutSettingsBlock_Fragment': PageData_LayoutSettingsBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_LayoutSettingsBlock_Fragment': IContentData_LayoutSettingsBlock_Fragment;'BlockData_LayoutSettingsBlock_Fragment': BlockData_LayoutSettingsBlock_Fragment;'PageData_LayoutSettingsBlock_Fragment': PageData_LayoutSettingsBlock_Fragment } }
     ) | (
       { __typename?: 'MegaMenuGroupBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_MegaMenuGroupBlock_Fragment': BlockData_MegaMenuGroupBlock_Fragment;'PageData_MegaMenuGroupBlock_Fragment': PageData_MegaMenuGroupBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_MegaMenuGroupBlock_Fragment': IContentData_MegaMenuGroupBlock_Fragment;'BlockData_MegaMenuGroupBlock_Fragment': BlockData_MegaMenuGroupBlock_Fragment;'PageData_MegaMenuGroupBlock_Fragment': PageData_MegaMenuGroupBlock_Fragment } }
     ) | (
       { __typename?: 'MenuNavigationBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_MenuNavigationBlock_Fragment': BlockData_MenuNavigationBlock_Fragment;'PageData_MenuNavigationBlock_Fragment': PageData_MenuNavigationBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_MenuNavigationBlock_Fragment': IContentData_MenuNavigationBlock_Fragment;'BlockData_MenuNavigationBlock_Fragment': BlockData_MenuNavigationBlock_Fragment;'PageData_MenuNavigationBlock_Fragment': PageData_MenuNavigationBlock_Fragment } }
     ) | (
       { __typename?: 'OdpEmbedBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_OdpEmbedBlock_Fragment': BlockData_OdpEmbedBlock_Fragment;'PageData_OdpEmbedBlock_Fragment': PageData_OdpEmbedBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_OdpEmbedBlock_Fragment': IContentData_OdpEmbedBlock_Fragment;'BlockData_OdpEmbedBlock_Fragment': BlockData_OdpEmbedBlock_Fragment;'PageData_OdpEmbedBlock_Fragment': PageData_OdpEmbedBlock_Fragment } }
     ) | (
       { __typename?: 'PageSeoSettings' }
-      & { ' $fragmentRefs'?: { 'BlockData_PageSeoSettings_Fragment': BlockData_PageSeoSettings_Fragment;'PageData_PageSeoSettings_Fragment': PageData_PageSeoSettings_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_PageSeoSettings_Fragment': IContentData_PageSeoSettings_Fragment;'BlockData_PageSeoSettings_Fragment': BlockData_PageSeoSettings_Fragment;'PageData_PageSeoSettings_Fragment': PageData_PageSeoSettings_Fragment } }
     ) | (
       { __typename?: 'ParagraphElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_ParagraphElement_Fragment': BlockData_ParagraphElement_Fragment;'PageData_ParagraphElement_Fragment': PageData_ParagraphElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_ParagraphElement_Fragment': IContentData_ParagraphElement_Fragment;'BlockData_ParagraphElement_Fragment': BlockData_ParagraphElement_Fragment;'PageData_ParagraphElement_Fragment': PageData_ParagraphElement_Fragment } }
     ) | (
       { __typename?: 'QuoteBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_QuoteBlock_Fragment': BlockData_QuoteBlock_Fragment;'PageData_QuoteBlock_Fragment': PageData_QuoteBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_QuoteBlock_Fragment': IContentData_QuoteBlock_Fragment;'BlockData_QuoteBlock_Fragment': BlockData_QuoteBlock_Fragment;'PageData_QuoteBlock_Fragment': PageData_QuoteBlock_Fragment } }
     ) | (
       { __typename?: 'RichTextElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_RichTextElement_Fragment': BlockData_RichTextElement_Fragment;'PageData_RichTextElement_Fragment': PageData_RichTextElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_RichTextElement_Fragment': IContentData_RichTextElement_Fragment;'BlockData_RichTextElement_Fragment': BlockData_RichTextElement_Fragment;'PageData_RichTextElement_Fragment': PageData_RichTextElement_Fragment } }
     ) | (
       { __typename?: 'SysContentFolder' }
-      & { ' $fragmentRefs'?: { 'PageData_SysContentFolder_Fragment': PageData_SysContentFolder_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_SysContentFolder_Fragment': IContentData_SysContentFolder_Fragment;'PageData_SysContentFolder_Fragment': PageData_SysContentFolder_Fragment } }
     ) | (
       { __typename?: 'TestimonialElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_TestimonialElement_Fragment': BlockData_TestimonialElement_Fragment;'PageData_TestimonialElement_Fragment': PageData_TestimonialElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_TestimonialElement_Fragment': IContentData_TestimonialElement_Fragment;'BlockData_TestimonialElement_Fragment': BlockData_TestimonialElement_Fragment;'PageData_TestimonialElement_Fragment': PageData_TestimonialElement_Fragment } }
     ) | (
       { __typename?: 'TextBlock' }
-      & { ' $fragmentRefs'?: { 'BlockData_TextBlock_Fragment': BlockData_TextBlock_Fragment;'PageData_TextBlock_Fragment': PageData_TextBlock_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_TextBlock_Fragment': IContentData_TextBlock_Fragment;'BlockData_TextBlock_Fragment': BlockData_TextBlock_Fragment;'PageData_TextBlock_Fragment': PageData_TextBlock_Fragment } }
     ) | (
       { __typename?: 'VideoElement' }
-      & { ' $fragmentRefs'?: { 'BlockData_VideoElement_Fragment': BlockData_VideoElement_Fragment;'PageData_VideoElement_Fragment': PageData_VideoElement_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_VideoElement_Fragment': IContentData_VideoElement_Fragment;'BlockData_VideoElement_Fragment': BlockData_VideoElement_Fragment;'PageData_VideoElement_Fragment': PageData_VideoElement_Fragment } }
     ) | (
       { __typename?: 'VideoMedia' }
-      & { ' $fragmentRefs'?: { 'PageData_VideoMedia_Fragment': PageData_VideoMedia_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData_VideoMedia_Fragment': IContentData_VideoMedia_Fragment;'PageData_VideoMedia_Fragment': PageData_VideoMedia_Fragment } }
     ) | (
       { __typename?: '_Component' }
-      & { ' $fragmentRefs'?: { 'BlockData__Component_Fragment': BlockData__Component_Fragment;'PageData__Component_Fragment': PageData__Component_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Component_Fragment': IContentData__Component_Fragment;'BlockData__Component_Fragment': BlockData__Component_Fragment;'PageData__Component_Fragment': PageData__Component_Fragment } }
     ) | (
       { __typename?: '_Content' }
-      & { ' $fragmentRefs'?: { 'PageData__Content_Fragment': PageData__Content_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Content_Fragment': IContentData__Content_Fragment;'PageData__Content_Fragment': PageData__Content_Fragment } }
     ) | (
       { __typename?: '_Experience' }
-      & { ' $fragmentRefs'?: { 'PageData__Experience_Fragment': PageData__Experience_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Experience_Fragment': IContentData__Experience_Fragment;'PageData__Experience_Fragment': PageData__Experience_Fragment } }
     ) | (
       { __typename?: '_Folder' }
-      & { ' $fragmentRefs'?: { 'PageData__Folder_Fragment': PageData__Folder_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Folder_Fragment': IContentData__Folder_Fragment;'PageData__Folder_Fragment': PageData__Folder_Fragment } }
     ) | (
       { __typename?: '_Image' }
-      & { ' $fragmentRefs'?: { 'PageData__Image_Fragment': PageData__Image_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Image_Fragment': IContentData__Image_Fragment;'PageData__Image_Fragment': PageData__Image_Fragment } }
     ) | (
       { __typename?: '_Media' }
-      & { ' $fragmentRefs'?: { 'PageData__Media_Fragment': PageData__Media_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Media_Fragment': IContentData__Media_Fragment;'PageData__Media_Fragment': PageData__Media_Fragment } }
     ) | (
       { __typename?: '_Page' }
-      & { ' $fragmentRefs'?: { 'PageData__Page_Fragment': PageData__Page_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Page_Fragment': IContentData__Page_Fragment;'PageData__Page_Fragment': PageData__Page_Fragment } }
     ) | (
       { __typename?: '_Section' }
-      & { ' $fragmentRefs'?: { 'BlockData__Section_Fragment': BlockData__Section_Fragment;'PageData__Section_Fragment': PageData__Section_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Section_Fragment': IContentData__Section_Fragment;'BlockData__Section_Fragment': BlockData__Section_Fragment;'PageData__Section_Fragment': PageData__Section_Fragment } }
     ) | (
       { __typename?: '_Video' }
-      & { ' $fragmentRefs'?: { 'PageData__Video_Fragment': PageData__Video_Fragment } }
+      & { ' $fragmentRefs'?: { 'IContentData__Video_Fragment': IContentData__Video_Fragment;'PageData__Video_Fragment': PageData__Video_Fragment } }
     ) | null } | null };
 
 export type getContentByPathQueryVariables = Exact<{
   path: Array<Scalars['String']['input']> | Scalars['String']['input'];
   locale?: InputMaybe<Array<Locales> | Locales>;
   siteId?: InputMaybe<Scalars['String']['input']>;
+  changeset?: InputMaybe<Scalars['String']['input']>;
 }>;
 
 
@@ -12078,6 +12304,6 @@ export const ElementDataFragmentDoc = {"kind":"Document","definitions":[{"kind":
 export const CompositionComponentNodeDataFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"CompositionComponentNodeData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ICompositionComponentNode"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"component"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"BlockData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"ElementData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ContentUrl"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"base"}},{"kind":"Field","name":{"kind":"Name","value":"default"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentInfo"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"IContentMetadata"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","name":{"kind":"Name","value":"locale"}},{"kind":"Field","name":{"kind":"Name","value":"types"}},{"kind":"Field","name":{"kind":"Name","value":"displayName"}},{"kind":"Field","name":{"kind":"Name","value":"version"}},{"kind":"Field","name":{"kind":"Name","value":"url"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"LinkData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IElementData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"BlockData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"ElementData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IElementData"}}]}}]} as unknown as DocumentNode<CompositionComponentNodeDataFragment, unknown>;
 export const ExperienceDataFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"ExperienceData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IExperience"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"composition"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"CompositionNodeData"}},{"kind":"Field","name":{"kind":"Name","value":"nodes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"CompositionNodeData"}},{"kind":"InlineFragment","typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ICompositionStructureNode"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"nodes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"CompositionNodeData"}},{"kind":"InlineFragment","typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ICompositionStructureNode"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"nodes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"CompositionNodeData"}},{"kind":"InlineFragment","typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ICompositionStructureNode"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"nodes"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"CompositionNodeData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"CompositionComponentNodeData"}}]}}]}}]}}]}}]}}]}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"CompositionComponentNodeData"}}]}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ContentUrl"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"base"}},{"kind":"Field","name":{"kind":"Name","value":"default"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentInfo"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"IContentMetadata"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","name":{"kind":"Name","value":"locale"}},{"kind":"Field","name":{"kind":"Name","value":"types"}},{"kind":"Field","name":{"kind":"Name","value":"displayName"}},{"kind":"Field","name":{"kind":"Name","value":"version"}},{"kind":"Field","name":{"kind":"Name","value":"url"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"LinkData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"BlockData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IElementData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"ElementData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IElementData"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"CompositionNodeData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ICompositionNode"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"name"},"name":{"kind":"Name","value":"displayName"}},{"kind":"Field","alias":{"kind":"Name","value":"layoutType"},"name":{"kind":"Name","value":"nodeType"}},{"kind":"Field","name":{"kind":"Name","value":"type"}},{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","alias":{"kind":"Name","value":"template"},"name":{"kind":"Name","value":"displayTemplateKey"}},{"kind":"Field","alias":{"kind":"Name","value":"settings"},"name":{"kind":"Name","value":"displaySettings"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","name":{"kind":"Name","value":"value"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"CompositionComponentNodeData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ICompositionComponentNode"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"component"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"BlockData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"ElementData"}}]}}]}}]} as unknown as DocumentNode<ExperienceDataFragment, unknown>;
 export const LinkItemDataFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkItemData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Link"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"title"}},{"kind":"Field","name":{"kind":"Name","value":"text"}},{"kind":"Field","name":{"kind":"Name","value":"target"}},{"kind":"Field","name":{"kind":"Name","value":"url"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"LinkData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ContentUrl"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"base"}},{"kind":"Field","name":{"kind":"Name","value":"default"}}]}}]} as unknown as DocumentNode<LinkItemDataFragment, unknown>;
-export const getContentByIdDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getContentById"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"key"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"version"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Locales"}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"path"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"domain"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"content"},"name":{"kind":"Name","value":"_Content"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_or"},"value":{"kind":"ListValue","values":[{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"key"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"key"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]},{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"url"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"hierarchical"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"path"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"base"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"domain"}}}]}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]}]}}]}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","alias":{"kind":"Name","value":"items"},"name":{"kind":"Name","value":"item"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"BlockData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"PageData"}}]}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ContentUrl"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"base"}},{"kind":"Field","name":{"kind":"Name","value":"default"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentInfo"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"IContentMetadata"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","name":{"kind":"Name","value":"locale"}},{"kind":"Field","name":{"kind":"Name","value":"types"}},{"kind":"Field","name":{"kind":"Name","value":"displayName"}},{"kind":"Field","name":{"kind":"Name","value":"version"}},{"kind":"Field","name":{"kind":"Name","value":"url"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"LinkData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"BlockData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"PageData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}}]} as unknown as DocumentNode<getContentByIdQuery, getContentByIdQueryVariables>;
-export const getContentByPathDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getContentByPath"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"path"}},"type":{"kind":"NonNullType","type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Locales"}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"siteId"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"content"},"name":{"kind":"Name","value":"_Content"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"url"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"default"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"in"},"value":{"kind":"Variable","name":{"kind":"Name","value":"path"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"base"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"siteId"}}}]}}]}}]}}]}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","alias":{"kind":"Name","value":"items"},"name":{"kind":"Name","value":"item"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"PageData"}}]}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ContentUrl"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"base"}},{"kind":"Field","name":{"kind":"Name","value":"default"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentInfo"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"IContentMetadata"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","name":{"kind":"Name","value":"locale"}},{"kind":"Field","name":{"kind":"Name","value":"types"}},{"kind":"Field","name":{"kind":"Name","value":"displayName"}},{"kind":"Field","name":{"kind":"Name","value":"version"}},{"kind":"Field","name":{"kind":"Name","value":"url"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"LinkData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"PageData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}}]} as unknown as DocumentNode<getContentByPathQuery, getContentByPathQueryVariables>;
-export const getContentTypeDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getContentType"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"key"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"version"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Locales"}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"path"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"domain"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"content"},"name":{"kind":"Name","value":"_Content"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_or"},"value":{"kind":"ListValue","values":[{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"key"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"key"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]},{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"url"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"hierarchical"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"path"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"base"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"domain"}}}]}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]}]}}]}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","alias":{"kind":"Name","value":"items"},"name":{"kind":"Name","value":"item"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"types"}}]}}]}}]}}]}}]} as unknown as DocumentNode<getContentTypeQuery, getContentTypeQueryVariables>;
+export const getContentByIdDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getContentById"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"key"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"version"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Locales"}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"path"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}},"defaultValue":{"kind":"StringValue","value":"-","block":false}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"domain"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"changeset"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"content"},"name":{"kind":"Name","value":"_Content"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"variation"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"include"},"value":{"kind":"EnumValue","value":"ALL"}}]}},{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_or"},"value":{"kind":"ListValue","values":[{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"key"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"key"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]},{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"url"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"default"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"path"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"base"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"domain"}}}]}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"changeset"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"changeset"}}}]}}]}}]}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","alias":{"kind":"Name","value":"items"},"name":{"kind":"Name","value":"item"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"BlockData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"PageData"}}]}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ContentUrl"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"base"}},{"kind":"Field","name":{"kind":"Name","value":"default"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentInfo"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"IContentMetadata"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","name":{"kind":"Name","value":"locale"}},{"kind":"Field","name":{"kind":"Name","value":"types"}},{"kind":"Field","name":{"kind":"Name","value":"displayName"}},{"kind":"Field","name":{"kind":"Name","value":"version"}},{"kind":"Field","name":{"kind":"Name","value":"url"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"LinkData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"BlockData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IComponent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"PageData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}}]} as unknown as DocumentNode<getContentByIdQuery, getContentByIdQueryVariables>;
+export const getContentByPathDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getContentByPath"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"path"}},"type":{"kind":"NonNullType","type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Locales"}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"siteId"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"changeset"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}},"defaultValue":{"kind":"NullValue"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"content"},"name":{"kind":"Name","value":"_Content"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"url"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"default"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"in"},"value":{"kind":"Variable","name":{"kind":"Name","value":"path"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"base"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"siteId"}}}]}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"changeset"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"changeset"}}}]}}]}}]}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","alias":{"kind":"Name","value":"items"},"name":{"kind":"Name","value":"item"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}},{"kind":"FragmentSpread","name":{"kind":"Name","value":"PageData"}}]}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"LinkData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ContentUrl"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"base"}},{"kind":"Field","name":{"kind":"Name","value":"default"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentInfo"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"IContentMetadata"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"key"}},{"kind":"Field","name":{"kind":"Name","value":"locale"}},{"kind":"Field","name":{"kind":"Name","value":"types"}},{"kind":"Field","name":{"kind":"Name","value":"displayName"}},{"kind":"Field","name":{"kind":"Name","value":"version"}},{"kind":"Field","name":{"kind":"Name","value":"url"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"LinkData"}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"IContentData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentInfo"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"_type"},"name":{"kind":"Name","value":"__typename"}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"PageData"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"_IContent"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"IContentData"}}]}}]} as unknown as DocumentNode<getContentByPathQuery, getContentByPathQueryVariables>;
+export const getContentTypeDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getContentType"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"key"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"version"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"locale"}},"type":{"kind":"ListType","type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Locales"}}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"path"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}},"defaultValue":{"kind":"StringValue","value":"-","block":false}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"domain"}},"type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"content"},"name":{"kind":"Name","value":"_Content"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"variation"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"include"},"value":{"kind":"EnumValue","value":"ALL"}}]}},{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_or"},"value":{"kind":"ListValue","values":[{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"key"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"key"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]},{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"_metadata"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"url"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"hierarchical"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"path"}}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"base"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"domain"}}}]}}]}},{"kind":"ObjectField","name":{"kind":"Name","value":"version"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"eq"},"value":{"kind":"Variable","name":{"kind":"Name","value":"version"}}}]}}]}}]}]}}]}},{"kind":"Argument","name":{"kind":"Name","value":"locale"},"value":{"kind":"Variable","name":{"kind":"Name","value":"locale"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"total"}},{"kind":"Field","alias":{"kind":"Name","value":"items"},"name":{"kind":"Name","value":"item"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"_metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"types"}}]}}]}}]}}]}}]} as unknown as DocumentNode<getContentTypeQuery, getContentTypeQueryVariables>;
