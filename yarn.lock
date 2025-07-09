@@ -2160,9 +2160,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-cms-api@npm:^6.0.0-pre1, @remkoj/optimizely-cms-api@npm:^6.0.0-pre2":
-  version: 6.0.0-pre2
-  resolution: "@remkoj/optimizely-cms-api@npm:6.0.0-pre2"
+"@remkoj/optimizely-cms-api@npm:^6.0.0-pre3":
+  version: 6.0.0-pre3
+  resolution: "@remkoj/optimizely-cms-api@npm:6.0.0-pre3"
   dependencies:
     "@types/node": "npm:^22.16.2"
     dotenv: "npm:^17.1.0"
@@ -2170,16 +2170,16 @@ __metadata:
     openapi-typescript-codegen: "npm:^0.29.0"
     tslib: "npm:^2.8.1"
     typescript: "npm:^5.8.3"
-  checksum: 10c0/9873eb4a45a15f8b8f4c19e6224d0bfb27c3adc1b688d636fe31318996504bc8adadbb699795bfb91392555d7141fa05495f94eb8d9bc3083277b3999af1c4cb
+  checksum: 10c0/0843290d7f4b587a767f8921179284779970e761dae8212a365dc1819dad3d4547044bfaa4af53895a0d6e0b278cefb1dbb8766300c00a25b775581fe0fac827
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-cms-cli@npm:^6.0.0-pre1":
-  version: 6.0.0-pre2
-  resolution: "@remkoj/optimizely-cms-cli@npm:6.0.0-pre2"
+"@remkoj/optimizely-cms-cli@npm:^6.0.0-pre3":
+  version: 6.0.0-pre3
+  resolution: "@remkoj/optimizely-cms-cli@npm:6.0.0-pre3"
   dependencies:
     "@inquirer/prompts": "npm:^7.6.0"
-    "@remkoj/optimizely-cms-api": "npm:^6.0.0-pre2"
+    "@remkoj/optimizely-cms-api": "npm:^6.0.0-pre3"
     chalk: "npm:^5.4.1"
     cli-table3: "npm:^0.6.5"
     dotenv: "npm:^17.1.0"
@@ -2192,17 +2192,17 @@ __metadata:
     "@types/node": "*"
   bin:
     opti-cms: ./dist/index.js
-  checksum: 10c0/75838c979be653079fa3010fd4d69c493c4e99b675a924047640ac57d2c39af8ceb7913cdec6dc745692a5abfd7c137ecf21aea3ac797e8b0a6af9f7f3565672
+  checksum: 10c0/3936fc541f39f5f41f5e5ce37e2793be9f79e2586779fb15d0edf2a2c486d6b11c419c106df305f5eccc333cc9e6221bc66fa585a10c41684dc0bae5ea3f14e3
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-cms-nextjs@npm:^6.0.0-pre1":
-  version: 6.0.0-pre2
-  resolution: "@remkoj/optimizely-cms-nextjs@npm:6.0.0-pre2"
+"@remkoj/optimizely-cms-nextjs@npm:^6.0.0-pre3":
+  version: 6.0.0-pre3
+  resolution: "@remkoj/optimizely-cms-nextjs@npm:6.0.0-pre3"
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.6.1"
-    "@remkoj/optimizely-cms-react": "npm:^6.0.0-pre2"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre2"
+    "@remkoj/optimizely-cms-react": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
     deepmerge: "npm:^4.3.1"
     entities: "npm:^6.0.1"
     graphql: "npm:^16.11.0"
@@ -2212,16 +2212,16 @@ __metadata:
     next: ^15
     react: ^19
     react-dom: ^19
-  checksum: 10c0/6776013f9c7f604c88ccfd98ed8d4f426b7185dc6082ee861efb2be246ee47d2ca3907a395554eb92b10cc2d42eade5c2ac3ea1807d488e92ed563add0cd3767
+  checksum: 10c0/258d4e07de8386d86779e063553cf084df292c5ebf73387789ac6c3089cd33ec58795a0f05c895f275edc916ef63bd2d9cadc50b0c85c173426d42247a569655
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-cms-react@npm:^6.0.0-pre1, @remkoj/optimizely-cms-react@npm:^6.0.0-pre2":
-  version: 6.0.0-pre2
-  resolution: "@remkoj/optimizely-cms-react@npm:6.0.0-pre2"
+"@remkoj/optimizely-cms-react@npm:^6.0.0-pre3":
+  version: 6.0.0-pre3
+  resolution: "@remkoj/optimizely-cms-react@npm:6.0.0-pre3"
   dependencies:
     "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre2"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
     crypto-js: "npm:^4.2.0"
     entities: "npm:^6.0.1"
     graphql: "npm:^16.11.0"
@@ -2229,15 +2229,15 @@ __metadata:
   peerDependencies:
     react: ^19
     react-dom: ^19
-  checksum: 10c0/d0b4cb34f170f8c0ff01df96a6ca2dc59619c0d4e67c6d3507073f0cb7f94f4012f8e38d66674d9063d88e916bfdc2f8ac5db76d2fe73aa968ef0b79fa714926
+  checksum: 10c0/908bafd7c54c7680c01b88c70fcd5a767f570cbf44a4883873e85ed60f393a338af8c20d66d121ebb267353b57d0af6eed0fce89a0a11c41451c7cb153ec12d4
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-graph-cli@npm:^6.0.0-pre1":
-  version: 6.0.0-pre2
-  resolution: "@remkoj/optimizely-graph-cli@npm:6.0.0-pre2"
+"@remkoj/optimizely-graph-cli@npm:^6.0.0-pre3":
+  version: 6.0.0-pre3
+  resolution: "@remkoj/optimizely-graph-cli@npm:6.0.0-pre3"
   dependencies:
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre2"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
     chalk: "npm:^5.4.1"
     cli-table3: "npm:^0.6.5"
     compare-versions: "npm:^6.1.1"
@@ -2249,25 +2249,25 @@ __metadata:
     yargs: "npm:^18.0.0"
   bin:
     opti-graph: bin/index.js
-  checksum: 10c0/72e3fb2baab2c66e16765e409b0ac87503728f1102e3a4c626cd94c5ec47eca59764301b706cc35b1fd183a63d6a4a96bb4b85a9bbde9fadcc5914e99b156e53
+  checksum: 10c0/6bd465d258161f6638f1b442847907d95193556cb1e169aeac742c15ef559c06100b6bbff00c7527c3ecd2378600c4dc7f11bc69715bc31655a4502acb4c644f
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-graph-client@npm:^6.0.0-pre1, @remkoj/optimizely-graph-client@npm:^6.0.0-pre2":
-  version: 6.0.0-pre2
-  resolution: "@remkoj/optimizely-graph-client@npm:6.0.0-pre2"
+"@remkoj/optimizely-graph-client@npm:^6.0.0-pre3":
+  version: 6.0.0-pre3
+  resolution: "@remkoj/optimizely-graph-client@npm:6.0.0-pre3"
   dependencies:
     crypto-js: "npm:^4.2.0"
     graphql: "npm:^16.11.0"
     graphql-request: "npm:^7.2.0"
     uuid: "npm:^11.1.0"
-  checksum: 10c0/5bc9e524029b6c4ceceb1575859252ad2d4794a138c123d755fa08492dbe5bfaecd553a5fe15c9ab121b086809dfe17fcb20c2d6fbae456fd40219ba81f60edc
+  checksum: 10c0/734d0a0dc776c761668e5e750edb3cc55a786ab8605b1557dd0a2e146c6c949f5142f9f3d1823971a370a664a50530e09222908127b1a9564c831c4ddbc3eaeb
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-graph-functions@npm:^6.0.0-pre1":
-  version: 6.0.0-pre2
-  resolution: "@remkoj/optimizely-graph-functions@npm:6.0.0-pre2"
+"@remkoj/optimizely-graph-functions@npm:^6.0.0-pre3":
+  version: 6.0.0-pre3
+  resolution: "@remkoj/optimizely-graph-functions@npm:6.0.0-pre3"
   dependencies:
     "@graphql-codegen/add": "npm:^5.0.3"
     "@graphql-codegen/client-preset": "npm:^4.8.3"
@@ -2276,7 +2276,7 @@ __metadata:
     "@graphql-codegen/typescript-graphql-request": "npm:^6.3.0"
     "@graphql-codegen/typescript-operations": "npm:^4.6.1"
     "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre2"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
     graphql: "npm:^16.11.0"
     graphql-request: "npm:^7.2.0"
     graphql-sock: "npm:^1.0.1"
@@ -2284,7 +2284,7 @@ __metadata:
     tslib: "npm:^2.8.1"
   bin:
     opti-patch: dist/patch.js
-  checksum: 10c0/874dc9b3cf301ef45c722c448e1efffe406a306f027a4cc9d5bdddf722ca72acd62f6a1b146722a44d4897b730a6492e881cd3ea635b242c63e7c5d4b444275a
+  checksum: 10c0/beff33764325c422077f7d736ffc9c5d24229c0b8cc41bcda8a04d032875589b579f32c55cfb4f4d411565a73fb9b26d044a1e6b3d215761bf0f8e3ff0bfd74b
   languageName: node
   linkType: hard
 
@@ -6728,13 +6728,13 @@ __metadata:
     "@graphql-codegen/cli": "npm:^5.0.7"
     "@graphql-codegen/fragment-matcher": "npm:^5.1.0"
     "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@remkoj/optimizely-cms-api": "npm:^6.0.0-pre1"
-    "@remkoj/optimizely-cms-cli": "npm:^6.0.0-pre1"
-    "@remkoj/optimizely-cms-nextjs": "npm:^6.0.0-pre1"
-    "@remkoj/optimizely-cms-react": "npm:^6.0.0-pre1"
-    "@remkoj/optimizely-graph-cli": "npm:^6.0.0-pre1"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre1"
-    "@remkoj/optimizely-graph-functions": "npm:^6.0.0-pre1"
+    "@remkoj/optimizely-cms-api": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-cms-cli": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-cms-nextjs": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-cms-react": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-graph-cli": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-graph-functions": "npm:^6.0.0-pre3"
     "@tailwindcss/postcss": "npm:^4.1.11"
     "@types/node": "npm:^22.16.2"
     "@types/react": "npm:^19.1.8"
