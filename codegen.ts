@@ -1,23 +1,8 @@
 // #region Environment variable file parsing
-// Environment file parsing and updating
-import * as DotEnv from 'dotenv'
-import { expand } from 'dotenv-expand'
-import path from 'node:path'
-import fs from 'node:fs'
-import figures from 'figures'
-import chalk from 'chalk'
-
-// Process environment files, to ensure the enviornment configuration is applied
-const envFiles : string[] = [".env", ".env.local"]
-if (process.env.NODE_ENV) {
-    envFiles.push(`.env.${ process.env.NODE_ENV }`)
-    envFiles.push(`.env.${ process.env.NODE_ENV }.local`)
-}
-envFiles.map(s => path.join(process.cwd(), s)).filter(s => fs.existsSync(s)).reverse().forEach(fileName => {
-    var result = DotEnv.config({ path: fileName, override: false })
-    expand(result)
-    console.log(`${ chalk.greenBright(figures.tick) } Processed ${fileName}`)
-})
+import { loadEnvConfig } from '@next/env'
+const loadEnvResult = loadEnvConfig(__dirname, undefined, console)
+console.log(`Optimizely CMS Configuration`)
+console.log(`  - Environments: ${loadEnvResult.loadedEnvFiles.map(x => x.path).join(', ')}\n`)
 // #endregion
 
 // Actual code generation setup

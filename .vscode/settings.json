@@ -2,9 +2,33 @@
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true,
-    "**/.next": true
+    "**/.next": true,
+    "**/node_modules": true
   },
   "eslint.nodePath": ".yarn/sdks",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "json.validate.enable": true,
+  "json.schemaDownload.enable": true,
+  "json.format.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "**/*.opti-type.json"
+      ],
+      "url": "./.vscode/contenttype.schema.json"
+    },
+    {
+      "fileMatch": [
+        "**/*.opti-style.json"
+      ],
+      "url": "./.vscode/displaytemplate.schema.json"
+    },
+    {
+      "fileMatch": [
+        "**/*.schema.json"
+      ],
+      "url": "https://json-schema.org/draft-07/schema"
+    }
+  ]
 }

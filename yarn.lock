@@ -841,6 +841,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fastify/deepmerge@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@fastify/deepmerge@npm:3.1.0"
+  checksum: 10c0/57eda9079e9ed6d137f966e8b0d08f219cbca6e79706a1be76fe10ba2b8fd87c33846f1c653299b09a2e8260ffba8c8fc708f9b40b54243648d6821061999c9b
+  languageName: node
+  linkType: hard
+
 "@formatjs/intl-localematcher@npm:^0.6.1":
   version: 0.6.1
   resolution: "@formatjs/intl-localematcher@npm:0.6.1"
@@ -862,7 +869,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:^5.0.7":
+"@graphql-codegen/cli@npm:^5":
   version: 5.0.7
   resolution: "@graphql-codegen/cli@npm:5.0.7"
   dependencies:
@@ -954,18 +961,6 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
   checksum: 10c0/8387a91dd852e8c45e76843453fc50dba4e63079f1ecfe2242f3c49561d229d55d1083905f46049ddd7f9f94b8e55a96e6deeac8a0c1db34a7312f5f216ca229
-  languageName: node
-  linkType: hard
-
-"@graphql-codegen/fragment-matcher@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "@graphql-codegen/fragment-matcher@npm:5.1.0"
-  dependencies:
-    "@graphql-codegen/plugin-helpers": "npm:^5.0.3"
-    tslib: "npm:~2.6.0"
-  peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 10c0/43d6d2de1da1d978390dae83850e313e767a46bffccf76ab54d8df2674390c53739850c05950048633d4b01f3a2d1768f9bf7f50439eb10ac7d47f9853f1eaa0
   languageName: node
   linkType: hard
 
@@ -2061,7 +2056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.3.5":
+"@next/env@npm:15.3.5, @next/env@npm:^15":
   version: 15.3.5
   resolution: "@next/env@npm:15.3.5"
   checksum: 10c0/7ffad993e85710bbfbf52826bb6a8726d807e714715b5f28fa1b770ea38e3757c1bef9dbe1a1c31ea8eae39a097aa8fc2987ea8d47a3d9f6f30a88e72919fd7b
@@ -2160,9 +2155,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remkoj/optimizely-cms-api@npm:^6.0.0-pre3":
-  version: 6.0.0-pre3
-  resolution: "@remkoj/optimizely-cms-api@npm:6.0.0-pre3"
+"@remkoj/optimizely-cms-api@portal:../optimizely-dxp-clients/packages/optimizely-cms-api::locator=optimizely-saas-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@remkoj/optimizely-cms-api@portal:../optimizely-dxp-clients/packages/optimizely-cms-api::locator=optimizely-saas-starter%40workspace%3A."
   dependencies:
     "@types/node": "npm:^22.16.2"
     dotenv: "npm:^17.1.0"
@@ -2170,20 +2165,23 @@ __metadata:
     openapi-typescript-codegen: "npm:^0.29.0"
     tslib: "npm:^2.8.1"
     typescript: "npm:^5.8.3"
-  checksum: 10c0/0843290d7f4b587a767f8921179284779970e761dae8212a365dc1819dad3d4547044bfaa4af53895a0d6e0b278cefb1dbb8766300c00a25b775581fe0fac827
   languageName: node
-  linkType: hard
+  linkType: soft
 
-"@remkoj/optimizely-cms-cli@npm:^6.0.0-pre3":
-  version: 6.0.0-pre3
-  resolution: "@remkoj/optimizely-cms-cli@npm:6.0.0-pre3"
+"@remkoj/optimizely-cms-cli@portal:../optimizely-dxp-clients/packages/optimizely-cms-cli::locator=optimizely-saas-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@remkoj/optimizely-cms-cli@portal:../optimizely-dxp-clients/packages/optimizely-cms-cli::locator=optimizely-saas-starter%40workspace%3A."
   dependencies:
+    "@fastify/deepmerge": "npm:^3.1.0"
     "@inquirer/prompts": "npm:^7.6.0"
-    "@remkoj/optimizely-cms-api": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-cms-api": "npm:^6.0.0-pre4"
+    ajv: "npm:^8.17.1"
+    ajv-formats: "npm:^3.0.1"
     chalk: "npm:^5.4.1"
     cli-table3: "npm:^0.6.5"
     dotenv: "npm:^17.1.0"
     dotenv-expand: "npm:^12.0.2"
+    fast-deep-equal: "npm:^3.1.3"
     figures: "npm:^6.1.0"
     glob: "npm:^11.0.3"
     tslib: "npm:^2.8.1"
@@ -2192,17 +2190,16 @@ __metadata:
     "@types/node": "*"
   bin:
     opti-cms: ./dist/index.js
-  checksum: 10c0/3936fc541f39f5f41f5e5ce37e2793be9f79e2586779fb15d0edf2a2c486d6b11c419c106df305f5eccc333cc9e6221bc66fa585a10c41684dc0bae5ea3f14e3
   languageName: node
-  linkType: hard
+  linkType: soft
 
-"@remkoj/optimizely-cms-nextjs@npm:^6.0.0-pre3":
-  version: 6.0.0-pre3
-  resolution: "@remkoj/optimizely-cms-nextjs@npm:6.0.0-pre3"
+"@remkoj/optimizely-cms-nextjs@portal:../optimizely-dxp-clients/packages/optimizely-cms-nextjs::locator=optimizely-saas-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@remkoj/optimizely-cms-nextjs@portal:../optimizely-dxp-clients/packages/optimizely-cms-nextjs::locator=optimizely-saas-starter%40workspace%3A."
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.6.1"
-    "@remkoj/optimizely-cms-react": "npm:^6.0.0-pre3"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-cms-react": "npm:^6.0.0-pre4"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre4"
     deepmerge: "npm:^4.3.1"
     entities: "npm:^6.0.1"
     graphql: "npm:^16.11.0"
@@ -2212,16 +2209,15 @@ __metadata:
     next: ^15
     react: ^19
     react-dom: ^19
-  checksum: 10c0/258d4e07de8386d86779e063553cf084df292c5ebf73387789ac6c3089cd33ec58795a0f05c895f275edc916ef63bd2d9cadc50b0c85c173426d42247a569655
   languageName: node
-  linkType: hard
+  linkType: soft
 
-"@remkoj/optimizely-cms-react@npm:^6.0.0-pre3":
-  version: 6.0.0-pre3
-  resolution: "@remkoj/optimizely-cms-react@npm:6.0.0-pre3"
+"@remkoj/optimizely-cms-react@portal:../optimizely-dxp-clients/packages/optimizely-cms-react::locator=optimizely-saas-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@remkoj/optimizely-cms-react@portal:../optimizely-dxp-clients/packages/optimizely-cms-react::locator=optimizely-saas-starter%40workspace%3A."
   dependencies:
     "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre4"
     crypto-js: "npm:^4.2.0"
     entities: "npm:^6.0.1"
     graphql: "npm:^16.11.0"
@@ -2229,15 +2225,14 @@ __metadata:
   peerDependencies:
     react: ^19
     react-dom: ^19
-  checksum: 10c0/908bafd7c54c7680c01b88c70fcd5a767f570cbf44a4883873e85ed60f393a338af8c20d66d121ebb267353b57d0af6eed0fce89a0a11c41451c7cb153ec12d4
   languageName: node
-  linkType: hard
+  linkType: soft
 
-"@remkoj/optimizely-graph-cli@npm:^6.0.0-pre3":
-  version: 6.0.0-pre3
-  resolution: "@remkoj/optimizely-graph-cli@npm:6.0.0-pre3"
+"@remkoj/optimizely-graph-cli@portal:../optimizely-dxp-clients/packages/optimizely-graph-cli::locator=optimizely-saas-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@remkoj/optimizely-graph-cli@portal:../optimizely-dxp-clients/packages/optimizely-graph-cli::locator=optimizely-saas-starter%40workspace%3A."
   dependencies:
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre4"
     chalk: "npm:^5.4.1"
     cli-table3: "npm:^0.6.5"
     compare-versions: "npm:^6.1.1"
@@ -2249,25 +2244,23 @@ __metadata:
     yargs: "npm:^18.0.0"
   bin:
     opti-graph: bin/index.js
-  checksum: 10c0/6bd465d258161f6638f1b442847907d95193556cb1e169aeac742c15ef559c06100b6bbff00c7527c3ecd2378600c4dc7f11bc69715bc31655a4502acb4c644f
   languageName: node
-  linkType: hard
+  linkType: soft
 
-"@remkoj/optimizely-graph-client@npm:^6.0.0-pre3":
-  version: 6.0.0-pre3
-  resolution: "@remkoj/optimizely-graph-client@npm:6.0.0-pre3"
+"@remkoj/optimizely-graph-client@portal:../optimizely-dxp-clients/packages/optimizely-graph-client::locator=optimizely-saas-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@remkoj/optimizely-graph-client@portal:../optimizely-dxp-clients/packages/optimizely-graph-client::locator=optimizely-saas-starter%40workspace%3A."
   dependencies:
     crypto-js: "npm:^4.2.0"
     graphql: "npm:^16.11.0"
     graphql-request: "npm:^7.2.0"
     uuid: "npm:^11.1.0"
-  checksum: 10c0/734d0a0dc776c761668e5e750edb3cc55a786ab8605b1557dd0a2e146c6c949f5142f9f3d1823971a370a664a50530e09222908127b1a9564c831c4ddbc3eaeb
   languageName: node
-  linkType: hard
+  linkType: soft
 
-"@remkoj/optimizely-graph-functions@npm:^6.0.0-pre3":
-  version: 6.0.0-pre3
-  resolution: "@remkoj/optimizely-graph-functions@npm:6.0.0-pre3"
+"@remkoj/optimizely-graph-functions@portal:../optimizely-dxp-clients/packages/optimizely-graph-functions::locator=optimizely-saas-starter%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@remkoj/optimizely-graph-functions@portal:../optimizely-dxp-clients/packages/optimizely-graph-functions::locator=optimizely-saas-starter%40workspace%3A."
   dependencies:
     "@graphql-codegen/add": "npm:^5.0.3"
     "@graphql-codegen/client-preset": "npm:^4.8.3"
@@ -2276,7 +2269,7 @@ __metadata:
     "@graphql-codegen/typescript-graphql-request": "npm:^6.3.0"
     "@graphql-codegen/typescript-operations": "npm:^4.6.1"
     "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
+    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre4"
     graphql: "npm:^16.11.0"
     graphql-request: "npm:^7.2.0"
     graphql-sock: "npm:^1.0.1"
@@ -2284,9 +2277,8 @@ __metadata:
     tslib: "npm:^2.8.1"
   bin:
     opti-patch: dist/patch.js
-  checksum: 10c0/beff33764325c422077f7d736ffc9c5d24229c0b8cc41bcda8a04d032875589b579f32c55cfb4f4d411565a73fb9b26d044a1e6b3d215761bf0f8e3ff0bfd74b
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "@repeaterjs/repeater@npm:^3.0.4":
   version: 3.0.6
@@ -2494,7 +2486,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/postcss@npm:^4.1.11":
+"@tailwindcss/postcss@npm:^4":
   version: 4.1.11
   resolution: "@tailwindcss/postcss@npm:4.1.11"
   dependencies:
@@ -2579,7 +2571,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.16.2":
+"@types/node@npm:*, @types/node@npm:^22, @types/node@npm:^22.16.2":
   version: 22.16.2
   resolution: "@types/node@npm:22.16.2"
   dependencies:
@@ -2588,7 +2580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.1.6":
+"@types/react-dom@npm:^19":
   version: 19.1.6
   resolution: "@types/react-dom@npm:19.1.6"
   peerDependencies:
@@ -2597,7 +2589,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.1.8":
+"@types/react@npm:^19":
   version: 19.1.8
   resolution: "@types/react@npm:19.1.8"
   dependencies:
@@ -2883,7 +2875,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/sdks@npm:^3.2.2":
+"@yarnpkg/sdks@npm:^3":
   version: 3.2.2
   resolution: "@yarnpkg/sdks@npm:3.2.2"
   dependencies:
@@ -2956,15 +2948,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.12.4":
-  version: 6.12.6
-  resolution: "ajv@npm:6.12.6"
+"ajv-formats@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "ajv-formats@npm:3.0.1"
   dependencies:
-    fast-deep-equal: "npm:^3.1.1"
-    fast-json-stable-stringify: "npm:^2.0.0"
-    json-schema-traverse: "npm:^0.4.1"
-    uri-js: "npm:^4.2.2"
-  checksum: 10c0/41e23642cbe545889245b9d2a45854ebba51cda6c778ebced9649420d9205f2efb39cb43dbc41e358409223b1ea43303ae4839db682c848b891e4811da1a5a71
+    ajv: "npm:^8.0.0"
+  peerDependencies:
+    ajv: ^8.0.0
+  peerDependenciesMeta:
+    ajv:
+      optional: true
+  checksum: 10c0/168d6bca1ea9f163b41c8147bae537e67bd963357a5488a1eaf3abe8baa8eec806d4e45f15b10767e6020679315c7e1e5e6803088dfb84efa2b4e9353b83dd0a
+  languageName: node
+  linkType: hard
+
+"ajv@npm:^8":
+  version: 8.17.1
+  resolution: "ajv@npm:8.17.1"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    fast-uri: "npm:^3.0.1"
+    json-schema-traverse: "npm:^1.0.0"
+    require-from-string: "npm:^2.0.2"
+  checksum: 10c0/ec3ba10a573c6b60f94639ffc53526275917a2df6810e4ab5a6b959d87459f9ef3f00d5e7865b82677cb7d21590355b34da14d1d0b9c32d75f95a187e76fff35
   languageName: node
   linkType: hard
 
@@ -4347,7 +4353,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:15.3.5":
+"eslint-config-next@npm:^15":
   version: 15.3.5
   resolution: "eslint-config-next@npm:15.3.5"
   dependencies:
@@ -4527,7 +4533,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:*, eslint@npm:^9.30.1":
+"eslint@npm:*, eslint@npm:^9":
   version: 9.30.1
   resolution: "eslint@npm:9.30.1"
   dependencies:
@@ -4655,7 +4661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-deep-equal@npm:^3.1.1, fast-deep-equal@npm:^3.1.3":
+"fast-deep-equal@npm:^3.1.3":
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
   checksum: 10c0/40dedc862eb8992c54579c66d914635afbec43350afbbe991235fdcb4e3a8d5af1b23ae7e79bef7d4882d0ecee06c3197488026998fb19f72dc95acff1d1b1d0
@@ -4688,13 +4694,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-json-stable-stringify@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "fast-json-stable-stringify@npm:2.1.0"
-  checksum: 10c0/7f081eb0b8a64e0057b3bb03f974b3ef00135fbf36c1c710895cd9300f13c94ba809bb3a81cf4e1b03f6e5285610a61abbd7602d0652de423144dfee5a389c9b
-  languageName: node
-  linkType: hard
-
 "fast-levenshtein@npm:^2.0.6":
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6"
@@ -4708,6 +4707,13 @@ __metadata:
   dependencies:
     fast-decode-uri-component: "npm:^1.0.1"
   checksum: 10c0/e8223273a9b199722f760f5a047a77ad049a14bd444b821502cb8218f5925e3a5fffb56b64389bca73ab2ac6f1aa7aebbe4e203e5f6e53ff5978de97c0fde4e3
+  languageName: node
+  linkType: hard
+
+"fast-uri@npm:^3.0.1":
+  version: 3.0.6
+  resolution: "fast-uri@npm:3.0.6"
+  checksum: 10c0/74a513c2af0584448aee71ce56005185f81239eab7a2343110e5bad50c39ad4fb19c5a6f99783ead1cac7ccaf3461a6034fda89fffa2b30b6d99b9f21c2f9d29
   languageName: node
   linkType: hard
 
@@ -5189,7 +5195,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.11.0":
+"graphql@npm:^16, graphql@npm:^16.11.0":
   version: 16.11.0
   resolution: "graphql@npm:16.11.0"
   checksum: 10c0/124da7860a2292e9acf2fed0c71fc0f6a9b9ca865d390d112bdd563c1f474357141501c12891f4164fe984315764736ad67f705219c62f7580681d431a85db88
@@ -5904,10 +5910,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-schema-traverse@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "json-schema-traverse@npm:0.4.1"
-  checksum: 10c0/108fa90d4cc6f08243aedc6da16c408daf81793bf903e9fd5ab21983cda433d5d2da49e40711da016289465ec2e62e0324dcdfbc06275a607fe3233fde4942ce
+"json-schema-traverse@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "json-schema-traverse@npm:1.0.0"
+  checksum: 10c0/71e30015d7f3d6dc1c316d6298047c8ef98a06d31ad064919976583eb61e1018a60a0067338f0f79cabc00d84af3fcc489bd48ce8a46ea165d9541ba17fb30c6
   languageName: node
   linkType: hard
 
@@ -6484,7 +6490,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.3.5":
+"next@npm:^15":
   version: 15.3.5
   resolution: "next@npm:15.3.5"
   dependencies:
@@ -6725,37 +6731,28 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "optimizely-saas-starter@workspace:."
   dependencies:
-    "@graphql-codegen/cli": "npm:^5.0.7"
-    "@graphql-codegen/fragment-matcher": "npm:^5.1.0"
-    "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@remkoj/optimizely-cms-api": "npm:^6.0.0-pre3"
-    "@remkoj/optimizely-cms-cli": "npm:^6.0.0-pre3"
-    "@remkoj/optimizely-cms-nextjs": "npm:^6.0.0-pre3"
-    "@remkoj/optimizely-cms-react": "npm:^6.0.0-pre3"
-    "@remkoj/optimizely-graph-cli": "npm:^6.0.0-pre3"
-    "@remkoj/optimizely-graph-client": "npm:^6.0.0-pre3"
-    "@remkoj/optimizely-graph-functions": "npm:^6.0.0-pre3"
-    "@tailwindcss/postcss": "npm:^4.1.11"
-    "@types/node": "npm:^22.16.2"
-    "@types/react": "npm:^19.1.8"
-    "@types/react-dom": "npm:^19.1.6"
-    "@yarnpkg/sdks": "npm:^3.2.2"
-    chalk: "npm:^5.4.1"
-    dotenv: "npm:^17.1.0"
-    dotenv-expand: "npm:^12.0.2"
-    entities: "npm:^6.0.1"
-    eslint: "npm:^9.30.1"
-    eslint-config-next: "npm:15.3.5"
-    figures: "npm:^6.1.0"
-    graphql: "npm:^16.11.0"
-    graphql-request: "npm:^7.2.0"
-    graphql-tag: "npm:^2.12.6"
-    next: "npm:15.3.5"
-    postcss: "npm:^8.5.6"
-    react: "npm:^19.1.0"
-    react-dom: "npm:^19.1.0"
-    tailwindcss: "npm:^4.1.11"
-    typescript: "npm:^5.8.3"
+    "@graphql-codegen/cli": "npm:^5"
+    "@next/env": "npm:^15"
+    "@remkoj/optimizely-cms-cli": "npm:^6"
+    "@remkoj/optimizely-cms-nextjs": "npm:^6"
+    "@remkoj/optimizely-cms-react": "npm:^6"
+    "@remkoj/optimizely-graph-cli": "npm:^6"
+    "@remkoj/optimizely-graph-client": "npm:^6"
+    "@remkoj/optimizely-graph-functions": "npm:^6"
+    "@tailwindcss/postcss": "npm:^4"
+    "@types/node": "npm:^22"
+    "@types/react": "npm:^19"
+    "@types/react-dom": "npm:^19"
+    "@yarnpkg/sdks": "npm:^3"
+    eslint: "npm:^9"
+    eslint-config-next: "npm:^15"
+    graphql: "npm:^16"
+    next: "npm:^15"
+    postcss: "npm:^8"
+    react: "npm:^19"
+    react-dom: "npm:^19"
+    tailwindcss: "npm:^4"
+    typescript: "npm:^5"
   languageName: unknown
   linkType: soft
 
@@ -7029,7 +7026,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.41, postcss@npm:^8.5.6":
+"postcss@npm:^8, postcss@npm:^8.4.41":
   version: 8.5.6
   resolution: "postcss@npm:8.5.6"
   dependencies:
@@ -7077,7 +7074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^2.1.0":
+"punycode@npm:^2.3.1":
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: 10c0/14f76a8206bc3464f794fb2e3d3cc665ae416c01893ad7a02b23766eb07159144ee612ad67af5e84fa4479ccfe67678c4feb126b0485651b302babf66f04f9e9
@@ -7098,7 +7095,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.1.0":
+"react-dom@npm:^19":
   version: 19.1.0
   resolution: "react-dom@npm:19.1.0"
   dependencies:
@@ -7116,7 +7113,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.1.0":
+"react@npm:^19":
   version: 19.1.0
   resolution: "react@npm:19.1.0"
   checksum: 10c0/530fb9a62237d54137a13d2cfb67a7db6a2156faed43eecc423f4713d9b20c6f2728b026b45e28fcd72e8eadb9e9ed4b089e99f5e295d2f0ad3134251bdd3698
@@ -7214,6 +7211,13 @@ __metadata:
   version: 2.1.1
   resolution: "require-directory@npm:2.1.1"
   checksum: 10c0/83aa76a7bc1531f68d92c75a2ca2f54f1b01463cb566cf3fbc787d0de8be30c9dbc211d1d46be3497dac5785fe296f2dd11d531945ac29730643357978966e99
+  languageName: node
+  linkType: hard
+
+"require-from-string@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "require-from-string@npm:2.0.2"
+  checksum: 10c0/aaa267e0c5b022fc5fd4eef49d8285086b15f2a1c54b28240fdf03599cbd9c26049fee3eab894f2e1f6ca65e513b030a7c264201e3f005601e80c49fb2937ce2
   languageName: node
   linkType: hard
 
@@ -7977,7 +7981,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.1.11, tailwindcss@npm:^4.1.11":
+"tailwindcss@npm:4.1.11, tailwindcss@npm:^4":
   version: 4.1.11
   resolution: "tailwindcss@npm:4.1.11"
   checksum: 10c0/e23eed0a0d6557b3aff8ba320b82758988ca67c351ee9b33dfc646e83a64f6eaeca6183dfc97e931f7b2fab46e925090066edd697d2ede3f396c9fdeb4af24c1
@@ -8067,10 +8071,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tr46@npm:~0.0.3":
-  version: 0.0.3
-  resolution: "tr46@npm:0.0.3"
-  checksum: 10c0/047cb209a6b60c742f05c9d3ace8fa510bff609995c129a37ace03476a9b12db4dbf975e74600830ef0796e18882b2381fb5fb1f6b4f96b832c374de3ab91a11
+"tr46@npm:^5.1.0":
+  version: 5.1.1
+  resolution: "tr46@npm:5.1.1"
+  dependencies:
+    punycode: "npm:^2.3.1"
+  checksum: 10c0/ae270e194d52ec67ebd695c1a42876e0f19b96e4aca2ab464ab1d9d17dc3acd3e18764f5034c93897db73421563be27c70c98359c4501136a497e46deda5d5ec
   languageName: node
   linkType: hard
 
@@ -8206,7 +8212,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*, typescript@npm:^5.8.3":
+"typescript@npm:*, typescript@npm:^5, typescript@npm:^5.8.3":
   version: 5.8.3
   resolution: "typescript@npm:5.8.3"
   bin:
@@ -8216,7 +8222,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A*#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.8.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A*#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.8.3#optional!builtin<compat/typescript>":
   version: 5.8.3
   resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"
   bin:
@@ -8316,15 +8322,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uri-js@npm:^4.2.2":
-  version: 4.4.1
-  resolution: "uri-js@npm:4.4.1"
-  dependencies:
-    punycode: "npm:^2.1.0"
-  checksum: 10c0/4ef57b45aa820d7ac6496e9208559986c665e49447cb072744c13b66925a362d96dd5a46c4530a6b8e203e5db5fe849369444440cb22ecfc26c679359e5dfa3c
-  languageName: node
-  linkType: hard
-
 "urlpattern-polyfill@npm:^10.0.0":
   version: 10.0.0
   resolution: "urlpattern-polyfill@npm:10.0.0"
@@ -8364,20 +8361,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webidl-conversions@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "webidl-conversions@npm:3.0.1"
-  checksum: 10c0/5612d5f3e54760a797052eb4927f0ddc01383550f542ccd33d5238cfd65aeed392a45ad38364970d0a0f4fea32e1f4d231b3d8dac4a3bdd385e5cf802ae097db
+"webidl-conversions@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "webidl-conversions@npm:7.0.0"
+  checksum: 10c0/228d8cb6d270c23b0720cb2d95c579202db3aaf8f633b4e9dd94ec2000a04e7e6e43b76a94509cdb30479bd00ae253ab2371a2da9f81446cc313f89a4213a2c4
   languageName: node
   linkType: hard
 
-"whatwg-url@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "whatwg-url@npm:5.0.0"
+"whatwg-url@npm:^14":
+  version: 14.2.0
+  resolution: "whatwg-url@npm:14.2.0"
   dependencies:
-    tr46: "npm:~0.0.3"
-    webidl-conversions: "npm:^3.0.0"
-  checksum: 10c0/1588bed84d10b72d5eec1d0faa0722ba1962f1821e7539c535558fb5398d223b0c50d8acab950b8c488b4ba69043fd833cc2697056b167d8ad46fac3995a55d5
+    tr46: "npm:^5.1.0"
+    webidl-conversions: "npm:^7.0.0"
+  checksum: 10c0/f746fc2f4c906607d09537de1227b13f9494c171141e5427ed7d2c0dd0b6a48b43d8e71abaae57d368d0c06b673fd8ec63550b32ad5ed64990c7b0266c2b4272
   languageName: node
   linkType: hard
 
