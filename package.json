@@ -17,9 +17,12 @@
     "webhook:list": "opti-graph webhook:list"
   },
   "dependencies": {
+    "@graphql-typed-document-node/core": "^3",
     "@remkoj/optimizely-cms-nextjs": "^6",
     "@remkoj/optimizely-cms-react": "^6",
     "@remkoj/optimizely-graph-client": "^6",
+    "graphql-request": "^7",
+    "graphql-tag": "^2",
     "next": "^15",
     "react": "^19",
     "react-dom": "^19"
@@ -43,7 +46,6 @@
     "typescript": "^5"
   },
   "resolutions": {
-    "ajv": "^8",
     "whatwg-url": "^14",
     "@graphql-codegen/visitor-plugin-common": "file:./packages/graphql-codegen-visitor-plugin-common-v5.8.0-patched.tgz"
   }
