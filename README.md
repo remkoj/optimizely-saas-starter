@@ -59,6 +59,8 @@ OPTIMIZELY_CMS_CLIENT_SECRET=
 
 You can find the default configuration, and more configuration options within the `.env` file
 
+Open `./src/channel.ts` and adjust for your environment, so content can be loaded for the correct website.
+
 ### 2. Reflect the CMS structure in the frontend
 Now, with the connection defined, create the default components to reflect the structure.
 

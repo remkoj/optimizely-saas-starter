@@ -5,14 +5,8 @@ import { createClient, AuthMode } from "@remkoj/optimizely-graph-client";
 // Import parts from the build
 import { getContentByPath } from "@/gql/functions";
 import factory from "@/components/factory";
+import channel from "@/channel";
 
-// Read the URLs from the environment
-const netlifyUrl = process.env.URL;
-const vercelUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : undefined;
-const customUrl = process.env.SITE_DOMAIN ? (process.env.SITE_DOMAIN.startsWith('http') ? process.env.SITE_DOMAIN : `https://${process.env.SITE_DOMAIN}`) : undefined;
-
-// Determine the ChannelURL
-const channelId = customUrl || vercelUrl || netlifyUrl;
 
 // Deconstruct the created page in the constants Next.js needs
 const { CmsPage, generateMetadata, generateStaticParams } = createPage(
@@ -23,7 +17,7 @@ const { CmsPage, generateMetadata, generateStaticParams } = createPage(
      * content in Graph based upon the domain for which this deployment is 
      * intended.
      */
-    channel: channelId,
+    channel,
 
     /**
      * Pass in the `getContentByPath` method that has been generated
