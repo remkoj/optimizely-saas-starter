@@ -9,7 +9,7 @@ const vercelUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process
 const customUrl = process.env.SITE_DOMAIN ? (process.env.SITE_DOMAIN.startsWith('http') ? process.env.SITE_DOMAIN : `https://${process.env.SITE_DOMAIN}`) : undefined;
 
 // Determine the ChannelURL
-const channelId = customUrl || vercelUrl || netlifyUrl || 'http://localhost:3000';
+const channelId = new URL(customUrl || vercelUrl || netlifyUrl || 'http://localhost:3000');
 
 /**
  * The default channel definition for this deployment

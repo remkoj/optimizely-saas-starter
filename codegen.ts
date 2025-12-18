@@ -1,23 +1,12 @@
 // #region Environment variable file parsing
-// Environment file parsing and updating
-import * as DotEnv from 'dotenv'
-import { expand } from 'dotenv-expand'
-import path from 'node:path'
-import fs from 'node:fs'
-import figures from 'figures'
-import chalk from 'chalk'
-
-// Process environment files, to ensure the enviornment configuration is applied
-const envFiles : string[] = [".env", ".env.local"]
-if (process.env.NODE_ENV) {
-    envFiles.push(`.env.${ process.env.NODE_ENV }`)
-    envFiles.push(`.env.${ process.env.NODE_ENV }.local`)
-}
-envFiles.map(s => path.join(process.cwd(), s)).filter(s => fs.existsSync(s)).reverse().forEach(fileName => {
-    var result = DotEnv.config({ path: fileName, override: false })
-    expand(result)
-    console.log(`${ chalk.greenBright(figures.tick) } Processed ${fileName}`)
-})
+import { loadEnvConfig } from '@next/env';
+import figures from 'figures';
+import chalk from 'chalk';
+const projectRootDir = __dirname;
+const files = loadEnvConfig(projectRootDir, process.env.NODE_ENV === 'development', console);
+files.loadedEnvFiles.forEach(({path}) => {
+    console.log(`${ chalk.greenBright(figures.tick) } Processed ${ path }`)
+});
 // #endregion
 
 // Actual code generation setup

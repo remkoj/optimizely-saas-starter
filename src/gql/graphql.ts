@@ -29,6 +29,7 @@ export type ArticleListElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -103,6 +104,7 @@ export type BlankExperience = IData & _IContent & _IExperience & _IItem & _IPage
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -183,6 +185,7 @@ export type BlankSection = IData & _IComponent & _IContent & _IItem & _ISection 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -261,6 +264,7 @@ export type BlogListingBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -339,6 +343,7 @@ export type BlogPostPage = IData & _IContent & _IItem & _IPage & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -490,6 +495,7 @@ export type BlogSectionExperience = IData & _IContent & _IExperience & _IItem & 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -587,6 +593,7 @@ export type ButtonBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -691,6 +698,7 @@ export type CTAElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -790,6 +798,7 @@ export type CardBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -878,6 +887,7 @@ export type CarouselBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -1203,6 +1213,7 @@ export type ContentRecsBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -1276,6 +1287,7 @@ export type ContentRecsElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -1530,6 +1542,7 @@ export type ContinueReadingComponent = IData & _IComponent & _IContent & _IItem 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -1619,6 +1632,7 @@ export type Data = IData & {
   _deleted?: Maybe<Scalars['Bool']['output']>;
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -1753,6 +1767,7 @@ export type GenericMedia = IData & _IAssetItem & _IContent & _IItem & _IMedia & 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -1828,6 +1843,7 @@ export type HeadingElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -1925,6 +1941,7 @@ export type HeroBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -2020,6 +2037,7 @@ export type HomePageHeroBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -2105,6 +2123,7 @@ export type HtmlBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -2571,6 +2590,7 @@ export type IData = {
   _deleted?: Maybe<Scalars['Bool']['output']>;
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -2687,6 +2707,7 @@ export type Image = IData & _IAssetItem & _IContent & _IImage & _IImageItem & _I
   _id?: Maybe<Scalars['String']['output']>;
   _imageMetadata?: Maybe<_ImageMetadata>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -2718,6 +2739,7 @@ export type ImageElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -2806,6 +2828,7 @@ export type ImageMedia = IData & _IAssetItem & _IContent & _IImage & _IImageItem
   _id?: Maybe<Scalars['String']['output']>;
   _imageMetadata?: Maybe<_ImageMetadata>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3006,6 +3029,7 @@ export type LandingPage = IData & _IContent & _IItem & _IPage & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3098,6 +3122,7 @@ export type LayoutContainerBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3177,6 +3202,7 @@ export type LayoutSettingsBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3462,6 +3488,7 @@ export type MegaMenuGroupBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3543,6 +3570,7 @@ export type MenuNavigationBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3631,6 +3659,7 @@ export type OdpEmbedBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3707,6 +3736,7 @@ export type OptiFormsChoiceElement = IData & _IComponent & _IContent & _IItem & 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3784,6 +3814,7 @@ export type OptiFormsContainerData = IData & _IComponent & _IContent & _IItem & 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3870,6 +3901,7 @@ export type OptiFormsNumberElement = IData & _IComponent & _IContent & _IItem & 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -3947,6 +3979,7 @@ export type OptiFormsRangeElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4020,6 +4053,7 @@ export type OptiFormsResetElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4098,6 +4132,7 @@ export type OptiFormsSelectionElement = IData & _IComponent & _IContent & _IItem
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4171,6 +4206,7 @@ export type OptiFormsSubmitElement = IData & _IComponent & _IContent & _IItem & 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4248,6 +4284,7 @@ export type OptiFormsTextareaElement = IData & _IComponent & _IContent & _IItem 
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4325,6 +4362,7 @@ export type OptiFormsTextboxElement = IData & _IComponent & _IContent & _IItem &
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4401,6 +4439,7 @@ export type OptiFormsUrlElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4487,6 +4526,7 @@ export type PageSeoSettings = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -4717,6 +4757,7 @@ export type ParagraphElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -6548,6 +6589,7 @@ export type QuoteBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -6652,6 +6694,7 @@ export type RichTextElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -6812,6 +6855,7 @@ export type StandardPage = IData & _IContent & _IItem & _IPage & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -6935,6 +6979,7 @@ export type StartPage = IData & _IContent & _IItem & _IPage & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7076,6 +7121,7 @@ export type SysContentFolder = IData & _IContent & _IFolder & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7147,6 +7193,7 @@ export type TestimonialElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7238,6 +7285,7 @@ export type TextBlock = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7326,6 +7374,7 @@ export type Video = IData & _IAssetItem & _IContent & _IItem & _IMedia & _IVideo
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7357,6 +7406,7 @@ export type VideoElement = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7447,6 +7497,7 @@ export type VideoMedia = IData & _IAssetItem & _IContent & _IItem & _IMedia & _I
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7560,6 +7611,7 @@ export type _AssetItem = IData & _IAssetItem & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -7699,6 +7751,7 @@ export type _Component = IData & _IComponent & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7770,6 +7823,7 @@ export type _Content = IData & _IContent & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7841,6 +7895,7 @@ export type _Experience = IData & _IContent & _IExperience & _IItem & _IPage & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7917,6 +7972,7 @@ export type _Folder = IData & _IContent & _IFolder & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -7988,6 +8044,7 @@ export type _IAssetItem = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -8010,6 +8067,7 @@ export type _IComponent = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8059,6 +8117,7 @@ export type _IContent = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8114,6 +8173,7 @@ export type _IExperience = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8138,6 +8198,7 @@ export type _IFolder = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8163,6 +8224,7 @@ export type _IImage = {
   _id?: Maybe<Scalars['String']['output']>;
   _imageMetadata?: Maybe<_ImageMetadata>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8188,6 +8250,7 @@ export type _IImageItem = {
   _id?: Maybe<Scalars['String']['output']>;
   _imageMetadata?: Maybe<_ImageMetadata>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -8210,6 +8273,7 @@ export type _IItem = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -8233,6 +8297,7 @@ export type _IMedia = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8256,6 +8321,7 @@ export type _IPage = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8279,6 +8345,7 @@ export type _ISection = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8304,6 +8371,7 @@ export type _IVideo = {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8330,6 +8398,7 @@ export type _Image = IData & _IAssetItem & _IContent & _IImage & _IImageItem & _
   _id?: Maybe<Scalars['String']['output']>;
   _imageMetadata?: Maybe<_ImageMetadata>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8371,6 +8440,7 @@ export type _ImageItem = IData & _IAssetItem & _IImageItem & _IItem & {
   _id?: Maybe<Scalars['String']['output']>;
   _imageMetadata?: Maybe<_ImageMetadata>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -8523,6 +8593,7 @@ export type _Item = IData & _IItem & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _modified?: Maybe<Scalars['Date']['output']>;
   _score?: Maybe<Scalars['Float']['output']>;
@@ -8590,6 +8661,7 @@ export type _Media = IData & _IAssetItem & _IContent & _IItem & _IMedia & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8748,6 +8820,7 @@ export type _Page = IData & _IContent & _IItem & _IPage & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8819,6 +8892,7 @@ export type _Section = IData & _IComponent & _IContent & _IItem & _ISection & {
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
@@ -8896,6 +8970,7 @@ export type _Video = IData & _IAssetItem & _IContent & _IItem & _IMedia & _IVide
   _fulltext?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
   _id?: Maybe<Scalars['String']['output']>;
   _itemMetadata?: Maybe<_Metadata>;
+  _json?: Maybe<Scalars['JSON']['output']>;
   _link?: Maybe<QueryRef>;
   _metadata?: Maybe<IContentMetadata>;
   _modified?: Maybe<Scalars['Date']['output']>;
