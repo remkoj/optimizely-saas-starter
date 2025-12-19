@@ -29,7 +29,7 @@ This starter assumes that your environment matches these criteria:
 If you're unsure about whether yarn has been installed, or you're using the latest stable version (e.g. yarn 4.3 or newer), run `yarn --version`. If installed it provides the running version of Yarn.
 
 ## Install the starter
-To install this example/starter, use the command: `yarn create next-app -e https://github.com/remkoj/optimizely-saas-starter my-great-project`. This will install this starter into the `my-great-project` folder within the current directory.
+To install this example/starter, use the command: `yarn create next-app@^14 -e https://github.com/remkoj/optimizely-saas-starter my-great-project`. This will install this starter into the `my-great-project` folder within the current directory.
 
 [`create-next-app` CLI Reference](https://nextjs.org/docs/pages/api-reference/create-next-app)
 
