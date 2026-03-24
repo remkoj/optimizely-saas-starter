@@ -8,15 +8,15 @@
     "dev": "npx -y concurrently 'next dev --experimental-https --turbo' 'graphql-codegen -w' --kill-others --names frontend,graphql",
     "dev:next": "next dev --experimental-https --turbo",
     "build:dev": "next build",
-    "build": "graphql-codegen && next build && yarn opti-graph webhook:create",
+    "build": "graphql-codegen && next build && npx -y @remkoj/optimizely-graph-cli@preview webhook:create",
     "sdk:update": "opti-cms schema:vscode",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "compile": "graphql-codegen",
     "watch": "graphql-codegen -w",
-    "webhook:create": "yarn opti-graph webhook:create",
-    "webhook:list": "yarn opti-graph webhook:list",
+    "webhook:create": "npx -y @remkoj/optimizely-graph-cli@preview webhook:create",
+    "webhook:list": "npx -y @remkoj/optimizely-graph-cli@preview webhook:list",
     "opti-graph": "npx -y @remkoj/optimizely-graph-cli@preview"
   },
   "dependencies": {
@@ -49,7 +49,6 @@
     "typescript": "^5.9.3"
   },
   "resolutions": {
-    "whatwg-url": "^14",
     "@graphql-codegen/visitor-plugin-common": "file:./packages/graphql-codegen-visitor-plugin-common-v6.2.2-patched.tgz"
   }
 }
