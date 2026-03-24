@@ -1,10 +1,9 @@
-import { draftMode } from "next/headers";
-import { createPage } from "@remkoj/optimizely-cms-nextjs/page";
-import { createClient, AuthMode } from "@remkoj/optimizely-graph-client";
+import { draftMode } from 'next/headers';
+import { createPage } from '@remkoj/optimizely-cms-nextjs/page';
+import { createClient, AuthMode } from '@remkoj/optimizely-graph-client';
 
 // Import parts from the build
-import { getContentByPath } from "@/gql/functions";
-import factory from "@/components/factory";
+import factory from '@/components/factory';
 
 // Read the URLs from the environment
 const netlifyUrl = process.env.URL;
@@ -20,18 +19,10 @@ const { CmsPage, generateMetadata, generateStaticParams } = createPage(
   {
     /**
      * The base URL, without trailing slash. This allows the frontend to filter
-     * content in Graph based upon the domain for which this deployment is 
+     * content in Graph based upon the domain for which this deployment is
      * intended.
      */
     channel: channelId,
-
-    /**
-     * Pass in the `getContentByPath` method that has been generated
-     * by GraphQL Codegen. If omitted, the application will use the Router to
-     * resolve the content item and then use the CmsComponent from the
-     * factory to load the content specifically for the resolved content item.
-     */
-    getContentByPath,
 
     /**
      * The client factory to be used when a new GraphQL client is required
@@ -47,8 +38,8 @@ const { CmsPage, generateMetadata, generateStaticParams } = createPage(
         nextJsFetchDirectives: true,
       });
       // Check if we're in request mode and draftMode is enabled
-      if (scope == "request" && (await draftMode()).isEnabled) {
-        console.log('🔱 Next.JS DraftMode enabled')
+      if (scope == 'request' && (await draftMode()).isEnabled) {
+        console.log('🔱 Next.JS DraftMode enabled');
         // If we're not authenticated, switch to HMAC authentication
         if (client.currentAuthMode === AuthMode.Public)
           client.updateAuthentication(AuthMode.HMAC);
@@ -61,10 +52,10 @@ const { CmsPage, generateMetadata, generateStaticParams } = createPage(
 );
 
 // Configure the Next.JS route handling for the pages
-export const dynamic = "error"; // Make sure we cache pages, if one component is not static none of the routes will be static
+export const dynamic = 'error'; // Make sure we cache pages, if one component is not static none of the routes will be static
 export const dynamicParams = true; // Allow new pages to be resolved without rebuilding the site
 export const revalidate = false; // Keep the cache untill manually revalidated using the Webhook
-export const fetchCache = "default-cache"; // Cache fetch results by default
+export const fetchCache = 'default-cache'; // Cache fetch results by default
 
 // Export CMS Page
 export { generateMetadata, generateStaticParams };
